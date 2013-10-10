@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4510" systemVersion="12E55" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1070" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4510"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="SNRSearchWindowController">
+            <connections>
+                <outlet property="searchField" destination="6" id="9"/>
+                <outlet property="searchViewController" destination="74" id="83"/>
+                <outlet property="tableView" destination="12" id="53"/>
+                <outlet property="window" destination="1" id="3"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <window title="Search" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" oneShot="NO" releasedWhenClosed="NO" wantsToBeColor="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="1" customClass="SNRSearchWindow">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowCollectionBehavior key="collectionBehavior" canJoinAllSpaces="YES"/>
+            <rect key="contentRect" x="508" y="280" width="457" height="270"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
+            <value key="minSize" type="size" width="457" height="270"/>
+            <value key="maxSize" type="size" width="457" height="270"/>
+            <view key="contentView" id="2" customClass="SNRSearchWindowContentView">
+                <rect key="frame" x="0.0" y="0.0" width="457" height="270"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <customView id="73">
+                        <rect key="frame" x="-15" y="0.0" width="472" height="272"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="46" horizontalPageScroll="10" verticalLineScroll="46" verticalPageScroll="10" usesPredominantAxisScrolling="NO" id="11">
+                                <rect key="frame" x="20" y="0.0" width="447" height="204"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
+                                <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="Up3-dC-x39">
+                                    <rect key="frame" x="0.0" y="0.0" width="447" height="204"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="sourceList" columnSelection="YES" multipleSelection="NO" emptySelection="NO" autosaveColumns="NO" rowHeight="44" viewBased="YES" id="12" customClass="SNRSearchTableView">
+                                            <rect key="frame" x="0.0" y="0.0" width="447" height="204"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <size key="intercellSpacing" width="3" height="2"/>
+                                            <color key="backgroundColor" red="0.21960784310000001" green="0.45882352939999999" blue="0.84313725490000002" alpha="0.0" colorSpace="deviceRGB"/>
+                                            <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                            <tableColumns>
+                                                <tableColumn width="444" minWidth="40" maxWidth="1000" id="15">
+                                                    <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left">
+                                                        <font key="font" metaFont="smallSystem"/>
+                                                        <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" white="0.33333298560000002" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </tableHeaderCell>
+                                                    <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="18">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                    <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                    <prototypeCellViews>
+                                                        <tableCellView identifier="SubtitleCell" id="89" customClass="SNRSearchTableCellView">
+                                                            <rect key="frame" x="1" y="1" width="444" height="44"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                            <subviews>
+                                                                <textField verticalHuggingPriority="750" id="104">
+                                                                    <rect key="frame" x="70" y="22" width="263" height="17"/>
+                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="107">
+                                                                        <font key="font" metaFont="systemBold"/>
+                                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                                    </textFieldCell>
+                                                                    <connections>
+                                                                        <binding destination="89" name="value" keyPath="objectValue.name" id="124"/>
+                                                                    </connections>
+                                                                </textField>
+                                                                <imageView id="105">
+                                                                    <rect key="frame" x="50" y="22" width="15" height="15"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" id="106"/>
+                                                                    <connections>
+                                                                        <binding destination="89" name="value" keyPath="objectValue.searchIcon" id="123"/>
+                                                                    </connections>
+                                                                </imageView>
+                                                                <textField verticalHuggingPriority="750" id="103">
+                                                                    <rect key="frame" x="50" y="4" width="283" height="17"/>
+                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="108">
+                                                                        <font key="font" metaFont="smallSystem"/>
+                                                                        <color key="textColor" red="0.3346212636" green="0.3346212636" blue="0.3346212636" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                                    </textFieldCell>
+                                                                    <connections>
+                                                                        <binding destination="89" name="value" keyPath="objectValue.searchSubtitleText" id="125"/>
+                                                                    </connections>
+                                                                </textField>
+                                                                <textField verticalHuggingPriority="750" id="102">
+                                                                    <rect key="frame" x="318" y="14" width="81" height="17"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
+                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" alignment="right" title="100 songs" id="109">
+                                                                        <font key="font" metaFont="system"/>
+                                                                        <color key="textColor" red="0.3346212636" green="0.3346212636" blue="0.3346212636" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                                    </textFieldCell>
+                                                                    <connections>
+                                                                        <binding destination="89" name="value" keyPath="objectValue.searchStatisticText" id="126"/>
+                                                                    </connections>
+                                                                </textField>
+                                                                <customView id="101" customClass="SNRShadowImageView">
+                                                                    <rect key="frame" x="2" y="2" width="40" height="40"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                                </customView>
+                                                                <button id="100">
+                                                                    <rect key="frame" x="420" y="13" width="24" height="19"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
+                                                                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="plus-Template" imagePosition="only" alignment="center" alternateImage="plus-h-Template" inset="2" id="110">
+                                                                        <behavior key="behavior" lightByContents="YES"/>
+                                                                        <font key="font" metaFont="system"/>
+                                                                    </buttonCell>
+                                                                </button>
+                                                            </subviews>
+                                                            <connections>
+                                                                <outlet property="artworkImageView" destination="101" id="114"/>
+                                                                <outlet property="iconImageView" destination="105" id="112"/>
+                                                                <outlet property="statisticTextField" destination="102" id="115"/>
+                                                                <outlet property="subtitleTextField" destination="103" id="113"/>
+                                                                <outlet property="textField" destination="104" id="111"/>
+                                                            </connections>
+                                                        </tableCellView>
+                                                        <tableCellView identifier="TitleCell" id="90" customClass="SNRSearchTableCellView">
+                                                            <rect key="frame" x="1" y="47" width="444" height="44"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                            <subviews>
+                                                                <textField verticalHuggingPriority="750" id="95">
+                                                                    <rect key="frame" x="71" y="13" width="263" height="17"/>
+                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="96">
+                                                                        <font key="font" metaFont="systemBold"/>
+                                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                                    </textFieldCell>
+                                                                    <connections>
+                                                                        <binding destination="90" name="value" keyPath="objectValue.name" id="120"/>
+                                                                    </connections>
+                                                                </textField>
+                                                                <imageView id="94">
+                                                                    <rect key="frame" x="51" y="13" width="15" height="15"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" id="97"/>
+                                                                    <connections>
+                                                                        <binding destination="90" name="value" keyPath="objectValue.searchIcon" id="121"/>
+                                                                    </connections>
+                                                                </imageView>
+                                                                <textField verticalHuggingPriority="750" id="93">
+                                                                    <rect key="frame" x="318" y="13" width="81" height="17"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
+                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" alignment="right" title="100 songs" id="98">
+                                                                        <font key="font" metaFont="system"/>
+                                                                        <color key="textColor" red="0.3346212636" green="0.3346212636" blue="0.3346212636" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                                    </textFieldCell>
+                                                                    <connections>
+                                                                        <binding destination="90" name="value" keyPath="objectValue.searchStatisticText" id="122"/>
+                                                                    </connections>
+                                                                </textField>
+                                                                <customView id="92" customClass="SNRShadowImageView">
+                                                                    <rect key="frame" x="2" y="2" width="40" height="40"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                                </customView>
+                                                                <button id="91">
+                                                                    <rect key="frame" x="420" y="12" width="24" height="19"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
+                                                                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="plus-Template" imagePosition="only" alignment="center" alternateImage="plus-h-Template" inset="2" id="99">
+                                                                        <behavior key="behavior" lightByContents="YES"/>
+                                                                        <font key="font" metaFont="system"/>
+                                                                    </buttonCell>
+                                                                </button>
+                                                            </subviews>
+                                                            <connections>
+                                                                <outlet property="artworkImageView" destination="92" id="116"/>
+                                                                <outlet property="iconImageView" destination="94" id="117"/>
+                                                                <outlet property="statisticTextField" destination="93" id="119"/>
+                                                                <outlet property="textField" destination="95" id="118"/>
+                                                            </connections>
+                                                        </tableCellView>
+                                                    </prototypeCellViews>
+                                                </tableColumn>
+                                            </tableColumns>
+                                            <connections>
+                                                <outlet property="dataSource" destination="74" id="79"/>
+                                                <outlet property="delegate" destination="74" id="80"/>
+                                                <outlet property="menu" destination="67" id="71"/>
+                                            </connections>
+                                        </tableView>
+                                    </subviews>
+                                    <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" arrowsPosition="none" controlSize="small" id="13">
+                                    <rect key="frame" x="0.0" y="190" width="447" height="14"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" arrowsPosition="none" controlSize="small" id="14">
+                                    <rect key="frame" x="224" y="17" width="11" height="102"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                            <textField focusRingType="none" verticalHuggingPriority="750" id="6">
+                                <rect key="frame" x="35" y="219" width="417" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" focusRingType="none" placeholderString="Search artists, albums, and songs" drawsBackground="YES" id="7">
+                                    <font key="font" size="23" name="LucidaGrande"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <outlet property="delegate" destination="74" id="78"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                    </customView>
+                </subviews>
+            </view>
+            <connections>
+                <outlet property="initialFirstResponder" destination="6" id="56"/>
+            </connections>
+        </window>
+        <menu id="67">
+            <connections>
+                <outlet property="delegate" destination="-2" id="72"/>
+            </connections>
+        </menu>
+        <viewController id="74" customClass="SNRSearchViewController">
+            <connections>
+                <outlet property="delegate" destination="-2" id="84"/>
+                <outlet property="searchField" destination="6" id="76"/>
+                <outlet property="tableView" destination="12" id="77"/>
+                <outlet property="view" destination="73" id="75"/>
+            </connections>
+        </viewController>
+    </objects>
+    <resources>
+        <image name="plus-Template" width="26" height="26"/>
+        <image name="plus-h-Template" width="26" height="26"/>
+    </resources>
+</document>
