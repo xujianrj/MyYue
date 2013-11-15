@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>D1E9BC64-820E-4550-BCD7-967900487944</string>
+	<string>F5EEF055-830D-48F8-9093-E66B76BB8797</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Sonora</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>FAF9212D-4681-4283-BE3B-786905C9EE20</key>
-		<string>ssh://github.com/xujianrj/Sonora.git</string>
+		<key>EE289188-389C-4EDE-8D42-715F3B7AA040</key>
+		<string>ssh://github.com/xujianrj/MyYue.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Sonora.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>FAF9212D-4681-4283-BE3B-786905C9EE20</key>
+		<key>EE289188-389C-4EDE-8D42-715F3B7AA040</key>
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/xujianrj/Sonora.git</string>
+	<string>ssh://github.com/xujianrj/MyYue.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>FAF9212D-4681-4283-BE3B-786905C9EE20</string>
+	<string>EE289188-389C-4EDE-8D42-715F3B7AA040</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>FAF9212D-4681-4283-BE3B-786905C9EE20</string>
+			<string>EE289188-389C-4EDE-8D42-715F3B7AA040</string>
 			<key>IDESourceControlWCCName</key>
-			<string>Sonora</string>
+			<string>MyYue</string>
 		</dict>
 	</array>
 </dict>

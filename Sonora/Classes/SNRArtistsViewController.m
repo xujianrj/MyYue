@@ -68,7 +68,7 @@ static NSString* const kExpandSidebarIdleNotification = @"SNRExpandSidebarIdleNo
     SNRArrayController *_arrayController;
     SNRArtistsStaticGroupNode *_staticGroupNode;
     SNRArtist *_compilationsArtist;
-    NSArray *_content;
+    NSMutableArray *_content;
     BOOL _awakenFromNib;
 }
 @synthesize outlineView = _outlineView;
@@ -93,31 +93,74 @@ static NSString* const kExpandSidebarIdleNotification = @"SNRExpandSidebarIdleNo
 
 - (void)reloadData
 {
-    NSManagedObjectContext *managedObjectContext = SONORA_MANAGED_OBJECT_CONTEXT;
-    _compilationsArtist = [managedObjectContext compilationsArtist];
-    _arrayController = [[SNRArrayController alloc] init];
-    [_arrayController setManagedObjectContext:managedObjectContext];
-    [_arrayController setEntityName:kEntityNameArtist];
-    [_arrayController setFetchSortDescriptors:[NSArray arrayWithObjects:[NSSortDescriptor sortDescriptorWithKey:kSortSortNameKey ascending:YES selector:@selector(localizedCaseInsensitiveCompare:)], nil]];
-    [_arrayController setFetchPredicate:[NSPredicate predicateWithFormat:@"(albums.@count != 0) AND (SELF != %@)", _compilationsArtist]];
-    [_arrayController setAutomaticallyRearrangesObjects:YES];
-    [_arrayController setClearsFilterPredicateOnInsertion:YES];
-    [_arrayController setPreservesSelection:YES];
-    [_arrayController addObserver:self forKeyPath:@"arrangedObjects" options:0 context:NULL];
-    [_arrayController addObserver:self forKeyPath:@"selectionIndexes" options:0 context:NULL];
-    [_arrayController fetch:nil];
+//    NSManagedObjectContext *managedObjectContext = SONORA_MANAGED_OBJECT_CONTEXT;
+//    _compilationsArtist = [managedObjectContext compilationsArtist];
+//    _arrayController = [[SNRArrayController alloc] init];
+//    [_arrayController setManagedObjectContext:managedObjectContext];
+//    [_arrayController setEntityName:kEntityNameArtist];
+//    [_arrayController setFetchSortDescriptors:[NSArray arrayWithObjects:[NSSortDescriptor sortDescriptorWithKey:kSortSortNameKey ascending:YES selector:@selector(localizedCaseInsensitiveCompare:)], nil]];
+//    [_arrayController setFetchPredicate:[NSPredicate predicateWithFormat:@"(albums.@count != 0) AND (SELF != %@)", _compilationsArtist]];
+//    [_arrayController setAutomaticallyRearrangesObjects:YES];
+//    [_arrayController setClearsFilterPredicateOnInsertion:YES];
+//    [_arrayController setPreservesSelection:YES];
+//    [_arrayController addObserver:self forKeyPath:@"arrangedObjects" options:0 context:NULL];
+//    [_arrayController addObserver:self forKeyPath:@"selectionIndexes" options:0 context:NULL];
+//    [_arrayController fetch:nil];
     
     _staticGroupNode = [[SNRArtistsStaticGroupNode alloc] init];
     _staticGroupNode.name = NSLocalizedString(@"Collections", nil);
     _staticGroupNode.groupNode = YES;
     [self resetStaticGroupNodeAttributes];
     
-    SNRArtistsArrayControllerNode *arrayNode = [[SNRArtistsArrayControllerNode alloc] initWithArrayController:_arrayController];
-    arrayNode.groupNode = YES;
-    arrayNode.name = NSLocalizedString(@"Artists", nil);
-    _content = [NSArray arrayWithObjects:_staticGroupNode, arrayNode, nil];
+//    SNRArtistsArrayControllerNode *arrayNode = [[SNRArtistsArrayControllerNode alloc] initWithArrayController:_arrayController];
+    
+    
+//    SNRArtistsArrayControllerNode *arrayNode = [[SNRArtistsArrayControllerNode alloc] init];
+//    arrayNode.groupNode = YES;
+//    arrayNode.name = NSLocalizedString(@"Artists", nil);
+//      _content = [NSArray arrayWithObjects: arrayNode, nil];
+
+//    
+    NSArray *groups=[self getGroupList];
+    _content=[[NSMutableArray alloc]init];
+   for(NSString *groupName in groups)
+   {
+       SNRArtistsArrayControllerNode *arrayNode=[self createGroupNode:groupName];
+        [_content addObject:arrayNode];
+   }
     [self.outlineView reloadData];
     [self postExpandNotification];
+}
+-(SNRArtistsArrayControllerNode *)createGroupNode:(NSString *)groupName
+{
+    //    SNRArtistsArrayControllerNode *arrayNode = [[SNRArtistsArrayControllerNode alloc] initWithArrayController:_arrayController];
+    
+    //    _content = [NSArray arrayWithObjects: arrayNode, nil];
+//    NSManagedObjectContext *managedObjectContext = SONORA_MANAGED_OBJECT_CONTEXT;
+//
+//    _arrayController = [[SNRArrayController alloc] init];
+//    [_arrayController setManagedObjectContext:managedObjectContext];
+//    [_arrayController setEntityName:kEntityNameArtist];
+//    [_arrayController setFetchSortDescriptors:[NSArray arrayWithObjects:[NSSortDescriptor sortDescriptorWithKey:kSortSortNameKey ascending:YES selector:@selector(localizedCaseInsensitiveCompare:)], nil]];
+//    [_arrayController setFetchPredicate:[NSPredicate predicateWithFormat:@"(albums.@count >= 5) "]];
+//    [_arrayController setAutomaticallyRearrangesObjects:YES];
+//    [_arrayController setClearsFilterPredicateOnInsertion:YES];
+//    [_arrayController setPreservesSelection:YES];
+//    [_arrayController addObserver:self forKeyPath:@"arrangedObjects" options:0 context:NULL];
+//    [_arrayController addObserver:self forKeyPath:@"selectionIndexes" options:0 context:NULL];
+//    [_arrayController fetch:nil];
+    SNRArtistsArrayControllerNode *arrayNode = [[SNRArtistsArrayControllerNode alloc] init];
+    arrayNode.groupNode = YES;
+    arrayNode.name = NSLocalizedString(groupName, nil);
+//    arrayNode.children=[NSArray arrayWithObjects:artist,nil];
+    return arrayNode    ;
+    
+}
+
+- (NSArray*) getGroupList
+{
+    NSArray* groups=[NSArray arrayWithObjects:@"1",@"2",nil];
+    return groups;
 }
 
 - (void)resetStaticGroupNodeAttributes
@@ -504,5 +547,9 @@ static NSString* const kExpandSidebarIdleNotification = @"SNRExpandSidebarIdleNo
         }
         [context saveChanges];
     }
+}
+-(IBAction) launchOSCGroupClientApplication:(id)sender
+{
+	[OSCGroupTaskHelper launchOSCGroupClientApplication];
 }
 @end

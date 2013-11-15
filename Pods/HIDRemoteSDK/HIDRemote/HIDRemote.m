@@ -202,6 +202,8 @@ static HIDRemote *sHIDRemote = nil;
 
 				switch (remoteMode)
 				{
+                    case kHIDRemoteModeNone:break;
+                    case kHIDRemoteModeShared:break;
 					case kHIDRemoteModeExclusive:
 					case kHIDRemoteModeExclusiveAuto:
 						if (![self isCandelairInstalled])

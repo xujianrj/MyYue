@@ -30,7 +30,7 @@
 
 #import "SNRConstants.h"
 
-#warning Set up your Last.fm API key and secret here and remove this warning
+//Note:warning Set up your Last.fm API key and secret here and remove this warning
 
 // Change these to the API key & secret obtained from your Last.fm API account page
 // <http://www.last.fm/api/account>

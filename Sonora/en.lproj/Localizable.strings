@@ -110,7 +110,7 @@
 "Enqueued" = "Enqueued";
 
 /* Albums Grid */
-"NoMusic" = "No Music";
+"NoMusic" = "";
 
 /* Sidebar */
 "Collections" = "COLLECTIONS";
@@ -162,7 +162,7 @@
 "Repeat" = "Repeat";
 "Clear" = "Clear";
 "StopPlayback" = "Stop Playback";
-"QueueEmpty" = "Queue empty";
+"QueueEmpty" = "";
 
 /* Object Placeholders */
 "UntitledArtist" = "Untitled Artist";

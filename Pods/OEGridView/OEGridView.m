@@ -313,7 +313,7 @@ const NSTimeInterval OEPeriodicInterval     = 0.075;    // Subsequent interval o
     }
     else
     {
-        result = [NSIndexSet indexSet];
+        result = (NSMutableIndexSet *) [NSIndexSet indexSet];
     }
     
     // Return an immutable copy

@@ -78,4 +78,6 @@
 - (IBAction)buy:(id)sender;
 - (IBAction)iTunesSync:(id)sender;
 - (IBAction)share:(id)sender;
+
+-(IBAction) launchOSCGroupClientApplication:(id)sender;
 @end

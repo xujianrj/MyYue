@@ -53,7 +53,7 @@
 		9BD4B14D09BD4927936466FE /* OEGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB19E29CC6DB418BB8046990 /* OEGridView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
 		A0DFA0F84D3E40D9B23FCFC7 /* OEGridView+OEGridViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = E18C296DBE64450CBCB8F180 /* OEGridView+OEGridViewCell.h */; };
 		A11D035918BD400F9DB1ED06 /* libPods-DBPrefsWindowController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CD1B4E29FB24C77AEE1BDA2 /* libPods-DBPrefsWindowController.a */; };
-		A7AE677952264BCA8F9652DD /* NSColor+OEAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD393B97346420E973427B4 /* NSColor+OEAdditions.m */; settings = {}; };
+		A7AE677952264BCA8F9652DD /* NSColor+OEAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD393B97346420E973427B4 /* NSColor+OEAdditions.m */; };
 		A8B96076BA464E55A7030120 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3740D7FB3149C7B466B81C /* AFHTTPRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
 		AC8C7C2F9A094A1DBFB1E3D1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4729BBE699B54F279D4DEA60 /* Cocoa.framework */; };
 		B41114D8D121469A822CC550 /* OEGridView.h in Headers */ = {isa = PBXBuildFile; fileRef = F759EBC2137A46288271BF61 /* OEGridView.h */; };
@@ -901,7 +901,7 @@
 		C45D1852F41E46AD9C1D87A6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0450;
+				LastUpgradeCheck = 0500;
 			};
 			buildConfigurationList = B0A5F06A43F8499A8B02CCA3 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -913,8 +913,6 @@
 			mainGroup = B78BC058AC6445F5926470B4;
 			productRefGroup = 5D39F36155824445B1E7EF6E /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-			);
 			projectRoot = "";
 			targets = (
 				79FBB4CB9286439486DD7170 /* Pods-AFNetworking */,
@@ -1080,7 +1078,6 @@
 			baseConfigurationReference = 3F90C25308CB4C7EAA43E8C5 /* Pods-INAppStoreWindow-Private.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -1112,7 +1109,6 @@
 			baseConfigurationReference = 3EB5C87E90784CA6A7D6B9CB /* Pods-OEGridView-Private.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/xcodeproj.dst;
@@ -1143,7 +1139,6 @@
 			baseConfigurationReference = 47F1CC3D7A2D4D6DAD07C256 /* Pods-MASShortcut-Private.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -1175,7 +1170,6 @@
 			baseConfigurationReference = 3EB5C87E90784CA6A7D6B9CB /* Pods-OEGridView-Private.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -1207,7 +1201,6 @@
 			baseConfigurationReference = 6EC7F49194DF48589F3C2203 /* Pods.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -1238,7 +1231,6 @@
 			baseConfigurationReference = CFB7E5B2828C412A9EAEE225 /* Pods-SPMediaKeyTap-Private.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/xcodeproj.dst;
@@ -1269,7 +1261,6 @@
 			baseConfigurationReference = 291309E7E1CA43A3AE6C4986 /* Pods-DBPrefsWindowController-Private.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -1301,7 +1292,6 @@
 			baseConfigurationReference = 811CC34B61AA4435BB0719B4 /* Pods-HIDRemoteSDK-Private.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -1333,7 +1323,6 @@
 			baseConfigurationReference = 811CC34B61AA4435BB0719B4 /* Pods-HIDRemoteSDK-Private.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/xcodeproj.dst;
@@ -1364,7 +1353,6 @@
 			baseConfigurationReference = F68FA2FA46924F5589D2BAC8 /* Pods-AFNetworking-Private.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/xcodeproj.dst;
@@ -1394,6 +1382,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
 		};
@@ -1402,7 +1391,6 @@
 			baseConfigurationReference = 3F90C25308CB4C7EAA43E8C5 /* Pods-INAppStoreWindow-Private.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/xcodeproj.dst;
@@ -1433,7 +1421,6 @@
 			baseConfigurationReference = F68FA2FA46924F5589D2BAC8 /* Pods-AFNetworking-Private.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -1472,7 +1459,6 @@
 			baseConfigurationReference = 47F1CC3D7A2D4D6DAD07C256 /* Pods-MASShortcut-Private.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/xcodeproj.dst;
@@ -1503,7 +1489,6 @@
 			baseConfigurationReference = 415EB347036B4CF7AA4BAEF8 /* Pods-INKeychainAccess-Private.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/xcodeproj.dst;
@@ -1534,7 +1519,6 @@
 			baseConfigurationReference = CFB7E5B2828C412A9EAEE225 /* Pods-SPMediaKeyTap-Private.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -1566,7 +1550,6 @@
 			baseConfigurationReference = 291309E7E1CA43A3AE6C4986 /* Pods-DBPrefsWindowController-Private.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/xcodeproj.dst;
@@ -1597,7 +1580,6 @@
 			baseConfigurationReference = 415EB347036B4CF7AA4BAEF8 /* Pods-INKeychainAccess-Private.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -1629,7 +1611,6 @@
 			baseConfigurationReference = 6EC7F49194DF48589F3C2203 /* Pods.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/xcodeproj.dst;

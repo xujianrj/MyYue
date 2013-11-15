@@ -284,6 +284,10 @@
 		03F9AD8B1411AAB7006E2873 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 03F9AD8A1411AAB7006E2873 /* icon.icns */; };
 		03FDF86815E32D8B009A54B8 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03FDF85B15E32D4E009A54B8 /* Sparkle.framework */; };
 		03FDF86915E32D94009A54B8 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 03FDF85B15E32D4E009A54B8 /* Sparkle.framework */; };
+		3758A7AD1835EB0E000149E0 /* OSCGroupTaskHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3758A7AC1835EB0E000149E0 /* OSCGroupTaskHelper.m */; };
+		3758A7BD18361B53000149E0 /* OSCGroupIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 3758A7BC18361B53000149E0 /* OSCGroupIcon.icns */; };
+		3758A7BF18361C11000149E0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3758A7BE18361C11000149E0 /* Images.xcassets */; };
+		3758A7C118361C98000149E0 /* Logo.icns in Resources */ = {isa = PBXBuildFile; fileRef = 3758A7C018361C98000149E0 /* Logo.icns */; };
 		86F6993C5FE244739816BDB3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10314D7A429A4257993EE387 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -817,6 +821,11 @@
 		03F9AD8A1411AAB7006E2873 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = icon.icns; path = Resources/icon.icns; sourceTree = "<group>"; };
 		03FDF84C15E32D4E009A54B8 /* Sparkle.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Sparkle.xcodeproj; path = External/Sparkle/Sparkle.xcodeproj; sourceTree = "<group>"; };
 		10314D7A429A4257993EE387 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3758A7AB1835EB0E000149E0 /* OSCGroupTaskHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCGroupTaskHelper.h; sourceTree = "<group>"; };
+		3758A7AC1835EB0E000149E0 /* OSCGroupTaskHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCGroupTaskHelper.m; sourceTree = "<group>"; };
+		3758A7BC18361B53000149E0 /* OSCGroupIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = OSCGroupIcon.icns; path = Resources/OSCGroupIcon.icns; sourceTree = "<group>"; };
+		3758A7BE18361C11000149E0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3758A7C018361C98000149E0 /* Logo.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Logo.icns; sourceTree = "<group>"; };
 		4695956A88A843CEA204DF02 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -1218,6 +1227,8 @@
 		036417891388CC90003F2A21 = {
 			isa = PBXGroup;
 			children = (
+				3758A7C018361C98000149E0 /* Logo.icns */,
+				3758A7AA1835EB0E000149E0 /* OSCGroupCommunication */,
 				0364179E1388CC92003F2A21 /* Sonora */,
 				0325A31313C2A48D003DE2AE /* Resources */,
 				036417971388CC92003F2A21 /* Frameworks */,
@@ -1256,6 +1267,7 @@
 				0364179F1388CC92003F2A21 /* Supporting Files */,
 				031324F316058A9F00CE34AC /* SNRConstants.h */,
 				031324F416058A9F00CE34AC /* SNRConstants.m */,
+				3758A7BE18361C11000149E0 /* Images.xcassets */,
 			);
 			path = Sonora;
 			sourceTree = "<group>";
@@ -1583,6 +1595,7 @@
 		03D9B27B15D8422E005C206C /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				3758A7BC18361B53000149E0 /* OSCGroupIcon.icns */,
 				036F85AD15EEFDAB00DF72B9 /* slider-empty-bottom.png */,
 				036F85AE15EEFDAB00DF72B9 /* slider-empty-bottom@2x.png */,
 				036F85AF15EEFDAB00DF72B9 /* slider-empty-mid.png */,
@@ -1744,6 +1757,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		3758A7AA1835EB0E000149E0 /* OSCGroupCommunication */ = {
+			isa = PBXGroup;
+			children = (
+				3758A7AB1835EB0E000149E0 /* OSCGroupTaskHelper.h */,
+				3758A7AC1835EB0E000149E0 /* OSCGroupTaskHelper.m */,
+			);
+			name = OSCGroupCommunication;
+			path = Sonora/OSCGroupCommunication;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1776,7 +1799,7 @@
 		0364178B1388CC90003F2A21 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0450;
+				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Sonora;
 			};
 			buildConfigurationList = 0364178E1388CC90003F2A21 /* Build configuration list for PBXProject "Sonora" */;
@@ -1897,6 +1920,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				036417A31388CC92003F2A21 /* InfoPlist.strings in Resources */,
+				3758A7BF18361C11000149E0 /* Images.xcassets in Resources */,
 				036417A91388CC92003F2A21 /* Credits.rtf in Resources */,
 				036417AF1388CC92003F2A21 /* MainMenu.xib in Resources */,
 				039F369613C7A7FA00790613 /* Localizable.strings in Resources */,
@@ -1949,6 +1973,7 @@
 				0328D9F115E7FAF100148655 /* editing-done@2x.png in Resources */,
 				0328D9F815E7FBAB00148655 /* sort-artist-Template.png in Resources */,
 				0328D9F915E7FBAB00148655 /* sort-artist-Template@2x.png in Resources */,
+				3758A7C118361C98000149E0 /* Logo.icns in Resources */,
 				0328D9FA15E7FBAB00148655 /* sort-new-Template.png in Resources */,
 				0328D9FB15E7FBAB00148655 /* sort-new-Template@2x.png in Resources */,
 				0328D9FC15E7FBAB00148655 /* sort-popular-Template.png in Resources */,
@@ -1964,6 +1989,7 @@
 				036F85BB15EEFDAB00DF72B9 /* slider-empty-mid.png in Resources */,
 				036F85BC15EEFDAB00DF72B9 /* slider-empty-mid@2x.png in Resources */,
 				036F85BD15EEFDAB00DF72B9 /* slider-empty-top.png in Resources */,
+				3758A7BD18361B53000149E0 /* OSCGroupIcon.icns in Resources */,
 				036F85BE15EEFDAB00DF72B9 /* slider-empty-top@2x.png in Resources */,
 				036F85BF15EEFDAB00DF72B9 /* slider-filled-bottom.png in Resources */,
 				036F85C015EEFDAB00DF72B9 /* slider-filled-bottom@2x.png in Resources */,
@@ -2149,6 +2175,7 @@
 				03A6564F151C38D6007CC5E6 /* SNRQueueViewCell.m in Sources */,
 				03A65654151C399A007CC5E6 /* SNRArtworkCache.m in Sources */,
 				037150EE151D7C2800376287 /* SNRGraphicsHelpers.m in Sources */,
+				3758A7AD1835EB0E000149E0 /* OSCGroupTaskHelper.m in Sources */,
 				03B17BFF151D969900FD53BF /* SNRQueueShineLayer.m in Sources */,
 				03AFC34C151E5D6A008F6F94 /* SNRQueueTextLayer.m in Sources */,
 				033A29A9151EBD79000E3218 /* SNRQueuePlayLayer.m in Sources */,
@@ -2338,7 +2365,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -2367,7 +2393,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -2389,7 +2414,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4695956A88A843CEA204DF02 /* Pods.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ARC_MIGRATION = donothing;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "compiler-default";
@@ -2434,7 +2458,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4695956A88A843CEA204DF02 /* Pods.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ARC_MIGRATION = donothing;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "compiler-default";

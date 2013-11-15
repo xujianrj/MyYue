@@ -29,6 +29,7 @@
  */
 
 #import "SNRArtistsArrayControllerNode.h"
+#import "NSManagedObjectContext-SNRAdditions.h"
 
 @implementation SNRArtistsArrayControllerNode {
     NSArrayController *_arrayController;
@@ -45,6 +46,22 @@
 
 - (NSArray*)children
 {
-    return [_arrayController arrangedObjects];
+
+    NSManagedObjectContext *managedObjectContext = SONORA_MANAGED_OBJECT_CONTEXT;
+    SNRArtist *artistKeith = [managedObjectContext createObjectOfEntityName:kEntityNameArtist];
+     [artistKeith setName:@"keith"];
+    SNRArtist *artistKen = [managedObjectContext createObjectOfEntityName:kEntityNameArtist];
+    [artistKen setName:@"ken"];
+    SNRArtist *artistWangWei = [managedObjectContext createObjectOfEntityName:kEntityNameArtist];
+    [artistWangWei setName:@"Kepler"];
+//    SNRArtist *artistSky = [managedObjectContext createObjectOfEntityName:kEntityNameArtist];
+//    [artistWangWei setName:@"Sky"];
+//    SNRArtist *artistHailei = [managedObjectContext createObjectOfEntityName:kEntityNameArtist];
+//    [artistWangWei setName:@"Hailei"];
+    NSArray *childrenGroup1 = [NSArray arrayWithObjects:artistKeith,artistKen,artistWangWei,nil];
+//    NSArray *childrenGroup2 = [NSArray arrayWithObjects:artistSky,artistHailei,nil];
+    return childrenGroup1;
+//    return self.name ==@"1"?childrenGroup1:childrenGroup2;
+//    return [_arrayController arrangedObjects];
 }
 @end

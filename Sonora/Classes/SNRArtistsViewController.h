@@ -29,6 +29,8 @@
  */
 
 #import "SNRArtistsStaticNode.h"
+#import "OSCGroupTaskHelper.h"
+
 
 @class SNRAlbumsViewController, SNRArtist;
 @interface SNRArtistsViewController : NSViewController <NSOutlineViewDataSource, NSOutlineViewDelegate> {
@@ -41,4 +43,5 @@
 - (void)selectArtist:(id)artist;
 
 - (IBAction)textFieldEndedEditing:(id)sender;
+-(IBAction) launchOSCGroupClientApplication:(id)sender;
 @end

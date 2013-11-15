@@ -194,7 +194,7 @@
 				<string>audio/monkeys-audio</string>
 			</array>
 			<key>CFBundleTypeName</key>
-			<string>Monkey&apos;s audio</string>
+			<string>Monkey's audio</string>
 			<key>CFBundleTypeRole</key>
 			<string>Viewer</string>
 			<key>LSItemContentTypes</key>
@@ -331,9 +331,9 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
-	<string>icon</string>
+	<string>Logo</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.iktm.Sonora</string>
+	<string>com.iktm.Artsmesh</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -360,6 +360,10 @@
 	<string>NSApplication</string>
 	<key>OSAScriptingDefinition</key>
 	<string>Sonora.sdef</string>
+	<key>SUFeedURL</key>
+	<string>http://getsonora.com/updates/sonora2.xml</string>
+	<key>SUPublicDSAKeyFile</key>
+	<string>dsa_pub.pem</string>
 	<key>UTExportedTypeDeclarations</key>
 	<array>
 		<dict>
@@ -384,10 +388,6 @@
 			</dict>
 		</dict>
 	</array>
-	<key>SUPublicDSAKeyFile</key>
-	<string>dsa_pub.pem</string>
-	<key>SUFeedURL</key>
-	<string>http://getsonora.com/updates/sonora2.xml</string>
 	<key>UTImportedTypeDeclarations</key>
 	<array>
 		<dict>
@@ -521,7 +521,7 @@
 				<string>public.audio</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>Monkey&apos;s audio</string>
+			<string>Monkey's audio</string>
 			<key>UTTypeIconFile</key>
 			<string>filetype</string>
 			<key>UTTypeIdentifier</key>

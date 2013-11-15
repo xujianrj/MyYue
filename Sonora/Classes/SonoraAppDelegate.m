@@ -48,6 +48,7 @@
 #import "NSMenu+SNRAdditions.h"
 
 #import "SNRArtwork.h"
+#import "OSCGroupTaskHelper.h"
 
 static NSString* const kPersistentStoreFilename = @"library";
 static NSString* const kSearchIndexFilename = @"searchindex";
@@ -764,5 +765,9 @@ static NSString* const kiTunesAppPath = @"/Applications/iTunes.app";
 {
     [[SNR_QueueCoordinator activeQueueController] shuffle];
     return nil;
+}
+-(IBAction) launchOSCGroupClientApplication:(id)sender
+{
+	[OSCGroupTaskHelper launchOSCGroupClientApplication];
 }
 @end

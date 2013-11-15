@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "79FBB4CB9286439486DD7170"
-               BuildableName = "libPods-AFNetworking.a"
-               BlueprintName = "Pods-AFNetworking"
-               ReferencedContainer = "container:Pods.xcodeproj">
+               BlueprintIdentifier = "036417931388CC92003F2A21"
+               BuildableName = "Sonora.app"
+               BlueprintName = "Sonora"
+               ReferencedContainer = "container:../Sonora.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -39,6 +39,15 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "036417931388CC92003F2A21"
+            BuildableName = "Sonora.app"
+            BlueprintName = "Sonora"
+            ReferencedContainer = "container:../Sonora.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
