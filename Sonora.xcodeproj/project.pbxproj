@@ -288,6 +288,8 @@
 		3758A7BD18361B53000149E0 /* OSCGroupIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 3758A7BC18361B53000149E0 /* OSCGroupIcon.icns */; };
 		3758A7BF18361C11000149E0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3758A7BE18361C11000149E0 /* Images.xcassets */; };
 		3758A7C118361C98000149E0 /* Logo.icns in Resources */ = {isa = PBXBuildFile; fileRef = 3758A7C018361C98000149E0 /* Logo.icns */; };
+		3758A7C41836243F000149E0 /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3758A7C31836243F000149E0 /* MainWindowController.m */; };
+		3758A7C71836248C000149E0 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3758A7C61836248C000149E0 /* MainViewController.m */; };
 		86F6993C5FE244739816BDB3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10314D7A429A4257993EE387 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -826,6 +828,10 @@
 		3758A7BC18361B53000149E0 /* OSCGroupIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = OSCGroupIcon.icns; path = Resources/OSCGroupIcon.icns; sourceTree = "<group>"; };
 		3758A7BE18361C11000149E0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3758A7C018361C98000149E0 /* Logo.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Logo.icns; sourceTree = "<group>"; };
+		3758A7C21836243F000149E0 /* MainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindowController.h; sourceTree = "<group>"; };
+		3758A7C31836243F000149E0 /* MainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindowController.m; sourceTree = "<group>"; };
+		3758A7C51836248B000149E0 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		3758A7C61836248C000149E0 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		4695956A88A843CEA204DF02 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -1227,6 +1233,10 @@
 		036417891388CC90003F2A21 = {
 			isa = PBXGroup;
 			children = (
+				3758A7C51836248B000149E0 /* MainViewController.h */,
+				3758A7C61836248C000149E0 /* MainViewController.m */,
+				3758A7C21836243F000149E0 /* MainWindowController.h */,
+				3758A7C31836243F000149E0 /* MainWindowController.m */,
 				3758A7C018361C98000149E0 /* Logo.icns */,
 				3758A7AA1835EB0E000149E0 /* OSCGroupCommunication */,
 				0364179E1388CC92003F2A21 /* Sonora */,
@@ -1770,9 +1780,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		036417931388CC92003F2A21 /* Sonora */ = {
+		036417931388CC92003F2A21 /* Artsmesh */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 036417B51388CC92003F2A21 /* Build configuration list for PBXNativeTarget "Sonora" */;
+			buildConfigurationList = 036417B51388CC92003F2A21 /* Build configuration list for PBXNativeTarget "Artsmesh" */;
 			buildPhases = (
 				03A7CC1E15117C8500618CAF /* ShellScript */,
 				036417901388CC92003F2A21 /* Sources */,
@@ -1788,7 +1798,7 @@
 				03FDF86715E32D85009A54B8 /* PBXTargetDependency */,
 				0347F30B14DCC82B00E8E5FC /* PBXTargetDependency */,
 			);
-			name = Sonora;
+			name = Artsmesh;
 			productName = Sonora;
 			productReference = 036417941388CC92003F2A21 /* Sonora.app */;
 			productType = "com.apple.product-type.application";
@@ -1828,7 +1838,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				036417931388CC92003F2A21 /* Sonora */,
+				036417931388CC92003F2A21 /* Artsmesh */,
 				032A1E0515DF1D1000256B5E /* Update Pods */,
 			);
 		};
@@ -2103,6 +2113,7 @@
 				033A1A6C1406ABC500839F31 /* SNRBlockMenuItem.m in Sources */,
 				03748EAC140AC1C4005CD324 /* SNRPopoverScroller.m in Sources */,
 				036581AC140B08430075FA61 /* NSError-SNRAdditions.m in Sources */,
+				3758A7C41836243F000149E0 /* MainWindowController.m in Sources */,
 				036581AF140B09D20075FA61 /* NSAlert-SNRAdditions.m in Sources */,
 				03660156140C5163004951C3 /* NSManagedObjectContext-SNRAdditions.m in Sources */,
 				03660159140C5928004951C3 /* SNRSearchIndex-SNRAdditions.m in Sources */,
@@ -2175,6 +2186,7 @@
 				03A6564F151C38D6007CC5E6 /* SNRQueueViewCell.m in Sources */,
 				03A65654151C399A007CC5E6 /* SNRArtworkCache.m in Sources */,
 				037150EE151D7C2800376287 /* SNRGraphicsHelpers.m in Sources */,
+				3758A7C71836248C000149E0 /* MainViewController.m in Sources */,
 				3758A7AD1835EB0E000149E0 /* OSCGroupTaskHelper.m in Sources */,
 				03B17BFF151D969900FD53BF /* SNRQueueShineLayer.m in Sources */,
 				03AFC34C151E5D6A008F6F94 /* SNRQueueTextLayer.m in Sources */,
@@ -2519,7 +2531,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		036417B51388CC92003F2A21 /* Build configuration list for PBXNativeTarget "Sonora" */ = {
+		036417B51388CC92003F2A21 /* Build configuration list for PBXNativeTarget "Artsmesh" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				036417B61388CC92003F2A21 /* Debug */,

@@ -12,6 +12,11 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application"/>
+        <viewController id="ao1-2W-g5l" customClass="MainViewController">
+            <connections>
+                <outlet property="logTextView" destination="HPT-tF-XDp" id="hZD-2y-Hnn"/>
+            </connections>
+        </viewController>
         <viewController title="Albums" id="1410" customClass="SNRAlbumsViewController">
             <connections>
                 <outlet property="gridScrollView" destination="1406" id="1413"/>
@@ -34,7 +39,7 @@
                 <menuItem title="Artsmesh" id="56">
                     <menu key="submenu" title="Artsmesh" systemMenu="apple" id="57">
                         <items>
-                            <menuItem title="About Sonora" id="58">
+                            <menuItem title="About Artsmesh" id="58">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="orderFrontStandardAboutPanel:" target="-2" id="1511"/>
@@ -430,70 +435,30 @@
                         <rect key="frame" x="0.0" y="18" width="1040" height="98"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                         <subviews>
-                            <customView id="1313" customClass="SNRQueueSidebar">
-                                <rect key="frame" x="1002" y="0.0" width="38" height="98"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" heightSizable="YES"/>
-                                <subviews>
-                                    <customView id="1364">
-                                        <rect key="frame" x="0.0" y="0.0" width="38" height="98"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <subviews>
-                                            <button toolTip="Save as mix" id="1316">
-                                                <rect key="frame" x="11" y="6" width="16" height="17"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
-                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="save-icon" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="1317">
-                                                    <behavior key="behavior" lightByContents="YES"/>
-                                                    <font key="font" metaFont="system"/>
-                                                </buttonCell>
-                                                <connections>
-                                                    <action selector="save:" target="769" id="1467"/>
-                                                </connections>
-                                            </button>
-                                            <button toolTip="Shuffle" id="1314">
-                                                <rect key="frame" x="11" y="75" width="16" height="16"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
-                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="shuffle-icon" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="1315">
-                                                    <behavior key="behavior" lightByContents="YES"/>
-                                                    <font key="font" metaFont="system"/>
-                                                </buttonCell>
-                                                <connections>
-                                                    <action selector="shuffle:" target="769" id="1324"/>
-                                                </connections>
-                                            </button>
-                                            <button toolTip="Repeat" id="1318">
-                                                <rect key="frame" x="11" y="54" width="16" height="16"/>
-                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="repeat-icon" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="1319">
-                                                    <behavior key="behavior" lightByContents="YES"/>
-                                                    <font key="font" metaFont="system"/>
-                                                </buttonCell>
-                                                <connections>
-                                                    <action selector="repeat:" target="769" id="1323"/>
-                                                </connections>
-                                            </button>
-                                            <button toolTip="Clear" id="1320">
-                                                <rect key="frame" x="11" y="29" width="16" height="20"/>
-                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="clear-icon" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="1321">
-                                                    <behavior key="behavior" lightByContents="YES"/>
-                                                    <font key="font" metaFont="system"/>
-                                                </buttonCell>
-                                                <connections>
-                                                    <action selector="clear:" target="769" id="1322"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </customView>
-                                </subviews>
-                            </customView>
                             <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasVerticalScroller="NO" usesPredominantAxisScrolling="NO" verticalScrollElasticity="none" scrollerKnobStyle="dark" id="1306" customClass="SNRQueueScrollView">
-                                <rect key="frame" x="0.0" y="0.0" width="1002" height="98"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1040" height="98"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <clipView key="contentView" drawsBackground="NO" id="PNb-Qw-wLA">
-                                    <rect key="frame" x="0.0" y="0.0" width="1002" height="98"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="1040" height="98"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <view id="1307" customClass="SNRQueueView">
-                                            <rect key="frame" x="0.0" y="0.0" width="1002" height="98"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="1040" height="98"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <textField verticalHuggingPriority="750" id="csL-d8-bdO">
+                                                    <rect key="frame" x="-2" y="0.0" width="1044" height="98"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" id="PRX-TI-ZlC">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                    <connections>
+                                                        <action selector="onChatEnter:" target="ao1-2W-g5l" id="xKK-Ki-Ha1"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
                                         </view>
                                     </subviews>
                                 </clipView>
@@ -619,6 +584,37 @@
                                                 <view focusRingType="none" id="1407" customClass="SNRAlbumsGridView">
                                                     <rect key="frame" x="0.0" y="0.0" width="807" height="535"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <subviews>
+                                                        <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" id="R6s-Wg-PdI">
+                                                            <rect key="frame" x="0.0" y="0.0" width="807" height="535"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                            <clipView key="contentView" id="Jz9-2Z-mRj">
+                                                                <rect key="frame" x="0.0" y="0.0" width="807" height="535"/>
+                                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                                <subviews>
+                                                                    <textView importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="HPT-tF-XDp">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="807" height="535"/>
+                                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                                        <color key="backgroundColor" red="0.93725496529999996" green="0.94901967050000002" blue="0.96078437569999997" alpha="1" colorSpace="deviceRGB"/>
+                                                                        <size key="minSize" width="807" height="535"/>
+                                                                        <size key="maxSize" width="807" height="10000000"/>
+                                                                        <color key="insertionPointColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                                        <size key="minSize" width="807" height="535"/>
+                                                                        <size key="maxSize" width="807" height="10000000"/>
+                                                                    </textView>
+                                                                </subviews>
+                                                                <color key="backgroundColor" red="0.93725496529999996" green="0.94901967050000002" blue="0.96078437569999997" alpha="1" colorSpace="deviceRGB"/>
+                                                            </clipView>
+                                                            <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="3Ac-2o-jBq">
+                                                                <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                            </scroller>
+                                                            <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="rLt-4i-klx">
+                                                                <rect key="frame" x="791" y="0.0" width="16" height="535"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                            </scroller>
+                                                        </scrollView>
+                                                    </subviews>
                                                 </view>
                                             </subviews>
                                             <color key="backgroundColor" red="0.93725496529999996" green="0.94901967050000002" blue="0.96078437569999997" alpha="1" colorSpace="deviceRGB"/>
@@ -696,7 +692,7 @@
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </searchFieldCell>
                 </searchField>
-                <segmentedControl toolTip="Sort by Popular, New, or Artist" verticalHuggingPriority="750" id="1338">
+                <segmentedControl hidden="YES" toolTip="Sort by Popular, New, or Artist" verticalHuggingPriority="750" id="1338">
                     <rect key="frame" x="0.0" y="5" width="94" height="25"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <segmentedCell key="cell" alignment="left" style="texturedSquare" trackingMode="selectOne" id="1339">
@@ -713,8 +709,8 @@
                         <action selector="sortingChanged:" target="1410" id="1457"/>
                     </connections>
                 </segmentedControl>
-                <button id="1352">
-                    <rect key="frame" x="406" y="10" width="17" height="16"/>
+                <button hidden="YES" id="1352">
+                    <rect key="frame" x="370" y="10" width="17" height="16"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
                     <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="volume" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="1353">
                         <behavior key="behavior" lightByContents="YES"/>
@@ -736,7 +732,7 @@
                     </connections>
                 </button>
                 <button hidden="YES" toolTip="Share Now Playing" id="1502">
-                    <rect key="frame" x="367" y="10" width="20" height="16"/>
+                    <rect key="frame" x="405" y="10" width="20" height="16"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
                     <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="OSCGroupIcon" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="1503">
                         <behavior key="behavior" lightByContents="YES"/>
@@ -802,6 +798,58 @@
                 </menuItem>
             </items>
         </menu>
+        <customView hidden="YES" id="1364">
+            <rect key="frame" x="0.0" y="0.0" width="38" height="98"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button toolTip="Save as mix" id="1316">
+                    <rect key="frame" x="11" y="6" width="16" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="save-icon" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="1317">
+                        <behavior key="behavior" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="save:" target="769" id="1467"/>
+                    </connections>
+                </button>
+                <button toolTip="Shuffle" id="1314">
+                    <rect key="frame" x="11" y="75" width="16" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="shuffle-icon" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="1315">
+                        <behavior key="behavior" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="shuffle:" target="769" id="1324"/>
+                    </connections>
+                </button>
+                <button toolTip="Repeat" id="1318">
+                    <rect key="frame" x="11" y="54" width="16" height="16"/>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="repeat-icon" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="1319">
+                        <behavior key="behavior" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="repeat:" target="769" id="1323"/>
+                    </connections>
+                </button>
+                <button toolTip="Clear" id="1320">
+                    <rect key="frame" x="11" y="29" width="16" height="20"/>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="clear-icon" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="1321">
+                        <behavior key="behavior" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="clear:" target="769" id="1322"/>
+                    </connections>
+                </button>
+            </subviews>
+        </customView>
+        <customView id="1313" customClass="SNRQueueSidebar">
+            <rect key="frame" x="0.0" y="0.0" width="38" height="98"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" heightSizable="YES"/>
+        </customView>
     </objects>
     <resources>
         <image name="OSCGroupIcon" width="512" height="512"/>
