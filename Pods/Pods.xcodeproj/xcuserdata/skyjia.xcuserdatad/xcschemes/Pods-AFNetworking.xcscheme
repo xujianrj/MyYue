@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "036417931388CC92003F2A21"
                BuildableName = "Artsmesh.app"
-               BlueprintName = "Artsmesh"
+               BlueprintName = "Artsmesh2"
                ReferencedContainer = "container:../Sonora.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -44,7 +44,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "036417931388CC92003F2A21"
             BuildableName = "Artsmesh.app"
-            BlueprintName = "Artsmesh"
+            BlueprintName = "Artsmesh2"
             ReferencedContainer = "container:../Sonora.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

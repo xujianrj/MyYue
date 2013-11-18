@@ -113,9 +113,7 @@
 
 - (IBAction)clickedCompilation:(id)sender
 {
-    if ([[sender selectedCell] state] == NSMixedState){
-        [[sender selectedCell] performClick:sender];
-    }
+   
 }
 
 - (IBAction)done:(id)sender

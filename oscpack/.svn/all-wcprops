@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 23
+/svn/!svn/ver/121/trunk
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/!svn/ver/64/trunk/LICENSE
+END
+TODO
+K 25
+svn:wc:ra_dav:version-url
+V 28
+/svn/!svn/ver/102/trunk/TODO
+END
+make.MinGW32.bat
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/72/trunk/make.MinGW32.bat
+END
+CHANGES
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svn/!svn/ver/120/trunk/CHANGES
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/62/trunk/CMakeLists.txt
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/!svn/ver/121/trunk/README
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/!svn/ver/115/trunk/Makefile
+END

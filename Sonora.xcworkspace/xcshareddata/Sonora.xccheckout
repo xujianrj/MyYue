@@ -36,6 +36,14 @@
 			<key>IDESourceControlWCCName</key>
 			<string>MyYue</string>
 		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EE289188-389C-4EDE-8D42-715F3B7AA040</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MyYue</string>
+		</dict>
 	</array>
 </dict>
 </plist>

@@ -296,6 +296,45 @@
 		3758A7E51839BB05000149E0 /* PreferencesDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3758A7E01839BB05000149E0 /* PreferencesDataSource.m */; };
 		3758A7E61839BB05000149E0 /* PreferencesHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3758A7E21839BB05000149E0 /* PreferencesHelper.m */; };
 		3758A7E71839BB05000149E0 /* ProcessInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3758A7E41839BB05000149E0 /* ProcessInfo.m */; };
+		3758A836183A0166000149E0 /* .name in Resources */ = {isa = PBXBuildFile; fileRef = 3758A7EA183A0166000149E0 /* .name */; };
+		3758A837183A0166000149E0 /* skyjia.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3758A7EC183A0166000149E0 /* skyjia.xml */; };
+		3758A838183A0166000149E0 /* encodings.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3758A7ED183A0166000149E0 /* encodings.xml */; };
+		3758A839183A0166000149E0 /* misc.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3758A7EE183A0166000149E0 /* misc.xml */; };
+		3758A83A183A0166000149E0 /* modules.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3758A7EF183A0166000149E0 /* modules.xml */; };
+		3758A83B183A0166000149E0 /* oscgroups.iml in Resources */ = {isa = PBXBuildFile; fileRef = 3758A7F0183A0166000149E0 /* oscgroups.iml */; };
+		3758A83C183A0166000149E0 /* scope_settings.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3758A7F2183A0166000149E0 /* scope_settings.xml */; };
+		3758A83D183A0166000149E0 /* vcs.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3758A7F3183A0166000149E0 /* vcs.xml */; };
+		3758A83E183A0166000149E0 /* workspace.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3758A7F4183A0166000149E0 /* workspace.xml */; };
+		3758A83F183A0166000149E0 /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3758A7F5183A0166000149E0 /* CMakeLists.txt */; };
+		3758A840183A0166000149E0 /* GroupServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3758A7F6183A0166000149E0 /* GroupServer.cpp */; };
+		3758A841183A0166000149E0 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 3758A7F8183A0166000149E0 /* LICENSE */; };
+		3758A842183A0166000149E0 /* make.MinGW32.bat in Resources */ = {isa = PBXBuildFile; fileRef = 3758A7F9183A0166000149E0 /* make.MinGW32.bat */; };
+		3758A843183A0166000149E0 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 3758A7FA183A0166000149E0 /* Makefile */; };
+		3758A844183A0166000149E0 /* md5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3758A7FB183A0166000149E0 /* md5.cpp */; };
+		3758A845183A0166000149E0 /* NAT_NOTES.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3758A7FD183A0166000149E0 /* NAT_NOTES.txt */; };
+		3758A846183A0166000149E0 /* NOTES.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3758A7FE183A0166000149E0 /* NOTES.txt */; };
+		3758A847183A0166000149E0 /* OscGroupClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3758A7FF183A0166000149E0 /* OscGroupClient.cpp */; };
+		3758A848183A0166000149E0 /* OscGroupServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3758A801183A0166000149E0 /* OscGroupServer.cpp */; };
+		3758A849183A0166000149E0 /* OscGroupServerStartStop.sh in Resources */ = {isa = PBXBuildFile; fileRef = 3758A803183A0166000149E0 /* OscGroupServerStartStop.sh */; };
+		3758A84A183A0166000149E0 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 3758A804183A0166000149E0 /* README */; };
+		3758A84B183A0166000149E0 /* run_client.bat in Resources */ = {isa = PBXBuildFile; fileRef = 3758A805183A0166000149E0 /* run_client.bat */; };
+		3758A84C183A0166000149E0 /* run_client.sh in Resources */ = {isa = PBXBuildFile; fileRef = 3758A806183A0166000149E0 /* run_client.sh */; };
+		3758A84D183A0166000149E0 /* run_server.sh in Resources */ = {isa = PBXBuildFile; fileRef = 3758A807183A0166000149E0 /* run_server.sh */; };
+		3758A84E183A0166000149E0 /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = 3758A808183A0166000149E0 /* TODO */; };
+		3758A84F183A0166000149E0 /* CHANGES in Resources */ = {isa = PBXBuildFile; fileRef = 3758A80A183A0166000149E0 /* CHANGES */; };
+		3758A850183A0166000149E0 /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3758A80B183A0166000149E0 /* CMakeLists.txt */; };
+		3758A854183A0166000149E0 /* IpEndpointName.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3758A811183A0166000149E0 /* IpEndpointName.cpp */; };
+		3758A855183A0166000149E0 /* NetworkingUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3758A816183A0166000149E0 /* NetworkingUtils.cpp */; };
+		3758A856183A0166000149E0 /* UdpSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3758A817183A0166000149E0 /* UdpSocket.cpp */; };
+		3758A859183A0166000149E0 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 3758A81D183A0166000149E0 /* LICENSE */; };
+		3758A85A183A0166000149E0 /* make.MinGW32.bat in Resources */ = {isa = PBXBuildFile; fileRef = 3758A81E183A0166000149E0 /* make.MinGW32.bat */; };
+		3758A85B183A0166000149E0 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 3758A81F183A0166000149E0 /* Makefile */; };
+		3758A85C183A0166000149E0 /* OscOutboundPacketStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3758A824183A0166000149E0 /* OscOutboundPacketStream.cpp */; };
+		3758A85D183A0166000149E0 /* OscPrintReceivedElements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3758A827183A0166000149E0 /* OscPrintReceivedElements.cpp */; };
+		3758A85E183A0166000149E0 /* OscReceivedElements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3758A829183A0166000149E0 /* OscReceivedElements.cpp */; };
+		3758A85F183A0166000149E0 /* OscTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3758A82B183A0166000149E0 /* OscTypes.cpp */; };
+		3758A860183A0166000149E0 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 3758A82D183A0166000149E0 /* README */; };
+		3758A864183A0166000149E0 /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = 3758A835183A0166000149E0 /* TODO */; };
 		86F6993C5FE244739816BDB3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10314D7A429A4257993EE387 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -850,6 +889,62 @@
 		3758A7E21839BB05000149E0 /* PreferencesHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesHelper.m; sourceTree = "<group>"; };
 		3758A7E31839BB05000149E0 /* ProcessInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProcessInfo.h; sourceTree = "<group>"; };
 		3758A7E41839BB05000149E0 /* ProcessInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProcessInfo.m; sourceTree = "<group>"; };
+		3758A7EA183A0166000149E0 /* .name */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .name; sourceTree = "<group>"; };
+		3758A7EC183A0166000149E0 /* skyjia.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = skyjia.xml; sourceTree = "<group>"; };
+		3758A7ED183A0166000149E0 /* encodings.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = encodings.xml; sourceTree = "<group>"; };
+		3758A7EE183A0166000149E0 /* misc.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = misc.xml; sourceTree = "<group>"; };
+		3758A7EF183A0166000149E0 /* modules.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = modules.xml; sourceTree = "<group>"; };
+		3758A7F0183A0166000149E0 /* oscgroups.iml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = oscgroups.iml; sourceTree = "<group>"; };
+		3758A7F2183A0166000149E0 /* scope_settings.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = scope_settings.xml; sourceTree = "<group>"; };
+		3758A7F3183A0166000149E0 /* vcs.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = vcs.xml; sourceTree = "<group>"; };
+		3758A7F4183A0166000149E0 /* workspace.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = workspace.xml; sourceTree = "<group>"; };
+		3758A7F5183A0166000149E0 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		3758A7F6183A0166000149E0 /* GroupServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GroupServer.cpp; sourceTree = "<group>"; };
+		3758A7F7183A0166000149E0 /* GroupServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupServer.h; sourceTree = "<group>"; };
+		3758A7F8183A0166000149E0 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		3758A7F9183A0166000149E0 /* make.MinGW32.bat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = make.MinGW32.bat; sourceTree = "<group>"; };
+		3758A7FA183A0166000149E0 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		3758A7FB183A0166000149E0 /* md5.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = md5.cpp; sourceTree = "<group>"; };
+		3758A7FC183A0166000149E0 /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
+		3758A7FD183A0166000149E0 /* NAT_NOTES.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NAT_NOTES.txt; sourceTree = "<group>"; };
+		3758A7FE183A0166000149E0 /* NOTES.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NOTES.txt; sourceTree = "<group>"; };
+		3758A7FF183A0166000149E0 /* OscGroupClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OscGroupClient.cpp; sourceTree = "<group>"; };
+		3758A800183A0166000149E0 /* OscGroupClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscGroupClient.h; sourceTree = "<group>"; };
+		3758A801183A0166000149E0 /* OscGroupServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OscGroupServer.cpp; sourceTree = "<group>"; };
+		3758A802183A0166000149E0 /* OscGroupServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscGroupServer.h; sourceTree = "<group>"; };
+		3758A803183A0166000149E0 /* OscGroupServerStartStop.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = OscGroupServerStartStop.sh; sourceTree = "<group>"; };
+		3758A804183A0166000149E0 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		3758A805183A0166000149E0 /* run_client.bat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = run_client.bat; sourceTree = "<group>"; };
+		3758A806183A0166000149E0 /* run_client.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = run_client.sh; sourceTree = "<group>"; };
+		3758A807183A0166000149E0 /* run_server.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = run_server.sh; sourceTree = "<group>"; };
+		3758A808183A0166000149E0 /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
+		3758A80A183A0166000149E0 /* CHANGES */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGES; sourceTree = "<group>"; };
+		3758A80B183A0166000149E0 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		3758A811183A0166000149E0 /* IpEndpointName.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IpEndpointName.cpp; sourceTree = "<group>"; };
+		3758A812183A0166000149E0 /* IpEndpointName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IpEndpointName.h; sourceTree = "<group>"; };
+		3758A813183A0166000149E0 /* NetworkingUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkingUtils.h; sourceTree = "<group>"; };
+		3758A814183A0166000149E0 /* PacketListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PacketListener.h; sourceTree = "<group>"; };
+		3758A816183A0166000149E0 /* NetworkingUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NetworkingUtils.cpp; sourceTree = "<group>"; };
+		3758A817183A0166000149E0 /* UdpSocket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UdpSocket.cpp; sourceTree = "<group>"; };
+		3758A818183A0166000149E0 /* TimerListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerListener.h; sourceTree = "<group>"; };
+		3758A819183A0166000149E0 /* UdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UdpSocket.h; sourceTree = "<group>"; };
+		3758A81D183A0166000149E0 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		3758A81E183A0166000149E0 /* make.MinGW32.bat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = make.MinGW32.bat; sourceTree = "<group>"; };
+		3758A81F183A0166000149E0 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		3758A821183A0166000149E0 /* MessageMappingOscPacketListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageMappingOscPacketListener.h; sourceTree = "<group>"; };
+		3758A822183A0166000149E0 /* OscException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscException.h; sourceTree = "<group>"; };
+		3758A823183A0166000149E0 /* OscHostEndianness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscHostEndianness.h; sourceTree = "<group>"; };
+		3758A824183A0166000149E0 /* OscOutboundPacketStream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OscOutboundPacketStream.cpp; sourceTree = "<group>"; };
+		3758A825183A0166000149E0 /* OscOutboundPacketStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscOutboundPacketStream.h; sourceTree = "<group>"; };
+		3758A826183A0166000149E0 /* OscPacketListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscPacketListener.h; sourceTree = "<group>"; };
+		3758A827183A0166000149E0 /* OscPrintReceivedElements.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OscPrintReceivedElements.cpp; sourceTree = "<group>"; };
+		3758A828183A0166000149E0 /* OscPrintReceivedElements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscPrintReceivedElements.h; sourceTree = "<group>"; };
+		3758A829183A0166000149E0 /* OscReceivedElements.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OscReceivedElements.cpp; sourceTree = "<group>"; };
+		3758A82A183A0166000149E0 /* OscReceivedElements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscReceivedElements.h; sourceTree = "<group>"; };
+		3758A82B183A0166000149E0 /* OscTypes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OscTypes.cpp; sourceTree = "<group>"; };
+		3758A82C183A0166000149E0 /* OscTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscTypes.h; sourceTree = "<group>"; };
+		3758A82D183A0166000149E0 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		3758A835183A0166000149E0 /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
 		4695956A88A843CEA204DF02 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -1252,6 +1347,8 @@
 		036417891388CC90003F2A21 = {
 			isa = PBXGroup;
 			children = (
+				3758A7E8183A0166000149E0 /* oscgroups */,
+				3758A809183A0166000149E0 /* oscpack */,
 				3758A7DC1839BAA2000149E0 /* IPHostDataSourceController.h */,
 				3758A7DD1839BAA2000149E0 /* IPHostDataSourceController.m */,
 				3758A7DA1839BA63000149E0 /* Shared */,
@@ -1825,12 +1922,130 @@
 			path = Sonora/Shared;
 			sourceTree = "<group>";
 		};
+		3758A7E8183A0166000149E0 /* oscgroups */ = {
+			isa = PBXGroup;
+			children = (
+				3758A7E9183A0166000149E0 /* .idea */,
+				3758A7F5183A0166000149E0 /* CMakeLists.txt */,
+				3758A7F6183A0166000149E0 /* GroupServer.cpp */,
+				3758A7F7183A0166000149E0 /* GroupServer.h */,
+				3758A7F8183A0166000149E0 /* LICENSE */,
+				3758A7F9183A0166000149E0 /* make.MinGW32.bat */,
+				3758A7FA183A0166000149E0 /* Makefile */,
+				3758A7FB183A0166000149E0 /* md5.cpp */,
+				3758A7FC183A0166000149E0 /* md5.h */,
+				3758A7FD183A0166000149E0 /* NAT_NOTES.txt */,
+				3758A7FE183A0166000149E0 /* NOTES.txt */,
+				3758A7FF183A0166000149E0 /* OscGroupClient.cpp */,
+				3758A800183A0166000149E0 /* OscGroupClient.h */,
+				3758A801183A0166000149E0 /* OscGroupServer.cpp */,
+				3758A802183A0166000149E0 /* OscGroupServer.h */,
+				3758A803183A0166000149E0 /* OscGroupServerStartStop.sh */,
+				3758A804183A0166000149E0 /* README */,
+				3758A805183A0166000149E0 /* run_client.bat */,
+				3758A806183A0166000149E0 /* run_client.sh */,
+				3758A807183A0166000149E0 /* run_server.sh */,
+				3758A808183A0166000149E0 /* TODO */,
+			);
+			path = oscgroups;
+			sourceTree = "<group>";
+		};
+		3758A7E9183A0166000149E0 /* .idea */ = {
+			isa = PBXGroup;
+			children = (
+				3758A7EA183A0166000149E0 /* .name */,
+				3758A7EB183A0166000149E0 /* dictionaries */,
+				3758A7ED183A0166000149E0 /* encodings.xml */,
+				3758A7EE183A0166000149E0 /* misc.xml */,
+				3758A7EF183A0166000149E0 /* modules.xml */,
+				3758A7F0183A0166000149E0 /* oscgroups.iml */,
+				3758A7F1183A0166000149E0 /* scopes */,
+				3758A7F3183A0166000149E0 /* vcs.xml */,
+				3758A7F4183A0166000149E0 /* workspace.xml */,
+			);
+			path = .idea;
+			sourceTree = "<group>";
+		};
+		3758A7EB183A0166000149E0 /* dictionaries */ = {
+			isa = PBXGroup;
+			children = (
+				3758A7EC183A0166000149E0 /* skyjia.xml */,
+			);
+			path = dictionaries;
+			sourceTree = "<group>";
+		};
+		3758A7F1183A0166000149E0 /* scopes */ = {
+			isa = PBXGroup;
+			children = (
+				3758A7F2183A0166000149E0 /* scope_settings.xml */,
+			);
+			path = scopes;
+			sourceTree = "<group>";
+		};
+		3758A809183A0166000149E0 /* oscpack */ = {
+			isa = PBXGroup;
+			children = (
+				3758A80A183A0166000149E0 /* CHANGES */,
+				3758A80B183A0166000149E0 /* CMakeLists.txt */,
+				3758A810183A0166000149E0 /* ip */,
+				3758A81D183A0166000149E0 /* LICENSE */,
+				3758A81E183A0166000149E0 /* make.MinGW32.bat */,
+				3758A81F183A0166000149E0 /* Makefile */,
+				3758A820183A0166000149E0 /* osc */,
+				3758A82D183A0166000149E0 /* README */,
+				3758A835183A0166000149E0 /* TODO */,
+			);
+			path = oscpack;
+			sourceTree = "<group>";
+		};
+		3758A810183A0166000149E0 /* ip */ = {
+			isa = PBXGroup;
+			children = (
+				3758A811183A0166000149E0 /* IpEndpointName.cpp */,
+				3758A812183A0166000149E0 /* IpEndpointName.h */,
+				3758A813183A0166000149E0 /* NetworkingUtils.h */,
+				3758A814183A0166000149E0 /* PacketListener.h */,
+				3758A815183A0166000149E0 /* posix */,
+				3758A818183A0166000149E0 /* TimerListener.h */,
+				3758A819183A0166000149E0 /* UdpSocket.h */,
+			);
+			path = ip;
+			sourceTree = "<group>";
+		};
+		3758A815183A0166000149E0 /* posix */ = {
+			isa = PBXGroup;
+			children = (
+				3758A816183A0166000149E0 /* NetworkingUtils.cpp */,
+				3758A817183A0166000149E0 /* UdpSocket.cpp */,
+			);
+			path = posix;
+			sourceTree = "<group>";
+		};
+		3758A820183A0166000149E0 /* osc */ = {
+			isa = PBXGroup;
+			children = (
+				3758A821183A0166000149E0 /* MessageMappingOscPacketListener.h */,
+				3758A822183A0166000149E0 /* OscException.h */,
+				3758A823183A0166000149E0 /* OscHostEndianness.h */,
+				3758A824183A0166000149E0 /* OscOutboundPacketStream.cpp */,
+				3758A825183A0166000149E0 /* OscOutboundPacketStream.h */,
+				3758A826183A0166000149E0 /* OscPacketListener.h */,
+				3758A827183A0166000149E0 /* OscPrintReceivedElements.cpp */,
+				3758A828183A0166000149E0 /* OscPrintReceivedElements.h */,
+				3758A829183A0166000149E0 /* OscReceivedElements.cpp */,
+				3758A82A183A0166000149E0 /* OscReceivedElements.h */,
+				3758A82B183A0166000149E0 /* OscTypes.cpp */,
+				3758A82C183A0166000149E0 /* OscTypes.h */,
+			);
+			path = osc;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		036417931388CC92003F2A21 /* Artsmesh */ = {
+		036417931388CC92003F2A21 /* Artsmesh2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 036417B51388CC92003F2A21 /* Build configuration list for PBXNativeTarget "Artsmesh" */;
+			buildConfigurationList = 036417B51388CC92003F2A21 /* Build configuration list for PBXNativeTarget "Artsmesh2" */;
 			buildPhases = (
 				03A7CC1E15117C8500618CAF /* ShellScript */,
 				036417901388CC92003F2A21 /* Sources */,
@@ -1846,7 +2061,7 @@
 				03FDF86715E32D85009A54B8 /* PBXTargetDependency */,
 				0347F30B14DCC82B00E8E5FC /* PBXTargetDependency */,
 			);
-			name = Artsmesh;
+			name = Artsmesh2;
 			productName = Sonora;
 			productReference = 036417941388CC92003F2A21 /* Sonora.app */;
 			productType = "com.apple.product-type.application";
@@ -1886,7 +2101,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				036417931388CC92003F2A21 /* Artsmesh */,
+				036417931388CC92003F2A21 /* Artsmesh2 */,
 				032A1E0515DF1D1000256B5E /* Update Pods */,
 			);
 		};
@@ -1977,6 +2192,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3758A846183A0166000149E0 /* NOTES.txt in Resources */,
 				036417A31388CC92003F2A21 /* InfoPlist.strings in Resources */,
 				3758A7BF18361C11000149E0 /* Images.xcassets in Resources */,
 				036417A91388CC92003F2A21 /* Credits.rtf in Resources */,
@@ -1984,39 +2200,53 @@
 				039F369613C7A7FA00790613 /* Localizable.strings in Resources */,
 				03DE521113EB8D810099BE69 /* SNRSongsViewController.xib in Resources */,
 				03F9AD8B1411AAB7006E2873 /* icon.icns in Resources */,
+				3758A838183A0166000149E0 /* encodings.xml in Resources */,
+				3758A859183A0166000149E0 /* LICENSE in Resources */,
 				03A85AFB1413E5E6006B42D5 /* filetype.icns in Resources */,
 				03B66B4C14637B3E0079A8DD /* SNRPreferencesWindowController.xib in Resources */,
 				03B66B52146396CD0079A8DD /* SNRSearchWindowController.xib in Resources */,
 				03A7DF771479D72B00C1A713 /* Sonora-Defaults.plist in Resources */,
 				0381FE1114B8076D00CA74CC /* general.png in Resources */,
 				0381FE1214B8076D00CA74CC /* lastfm.png in Resources */,
+				3758A83E183A0166000149E0 /* workspace.xml in Resources */,
+				3758A83B183A0166000149E0 /* oscgroups.iml in Resources */,
 				0381FE1314B8076D00CA74CC /* sync.png in Resources */,
+				3758A83D183A0166000149E0 /* vcs.xml in Resources */,
 				03A3BF8514D5EB140060C73F /* Sonora.sdef in Resources */,
 				03318AEC14D77E840090A4DB /* SNRSongMetadataViewController.xib in Resources */,
 				03318AEF14D77EC30090A4DB /* SNRMetadataWindowController.xib in Resources */,
 				03EF453814DA24CB00451981 /* meta-right.png in Resources */,
 				03EF453914DA24CB00451981 /* meta-left.png in Resources */,
 				03EF453C14DA319D00451981 /* SNRMetadataViewController.xib in Resources */,
+				3758A84C183A0166000149E0 /* run_client.sh in Resources */,
 				0347F31014DCE1C500E8E5FC /* SNRAlbumMetadataViewController.xib in Resources */,
+				3758A845183A0166000149E0 /* NAT_NOTES.txt in Resources */,
 				03F2B9A514E863F500792CF4 /* SNRProgressWindowController.xib in Resources */,
 				03AB8CB71539147F00F9250E /* SNRSearchPopoverController.xib in Resources */,
 				03B19E8D15535A3400C3B8D1 /* SNRSaveMixWindowController.xib in Resources */,
 				03D0746315672BD3007B30CA /* SNRVolumeViewController.xib in Resources */,
+				3758A84B183A0166000149E0 /* run_client.bat in Resources */,
 				033EFECC156ED13200AB1412 /* eq-reset.png in Resources */,
+				3758A839183A0166000149E0 /* misc.xml in Resources */,
 				038E796515D83EDC008613DB /* clear-icon.png in Resources */,
 				038E796815D83EDC008613DB /* clear-icon@2x.png in Resources */,
 				038E796D15D83FD4008613DB /* repeat-icon.png in Resources */,
 				038E797015D83FD4008613DB /* repeat-icon@2x.png in Resources */,
+				3758A860183A0166000149E0 /* README in Resources */,
 				038E797515D8400E008613DB /* shuffle-icon.png in Resources */,
 				038E797815D8400E008613DB /* shuffle-icon@2x.png in Resources */,
 				038E797D15D84037008613DB /* save-icon.png in Resources */,
 				038E798015D84037008613DB /* save-icon@2x.png in Resources */,
 				03D9B27515D8422C005C206C /* crosshatch-bg.png in Resources */,
 				03D9B27815D8422C005C206C /* crosshatch-bg@2x.png in Resources */,
+				3758A85A183A0166000149E0 /* make.MinGW32.bat in Resources */,
+				3758A837183A0166000149E0 /* skyjia.xml in Resources */,
 				03D9B28015D84284005C206C /* default-artwork.png in Resources */,
 				03D9B28315D84284005C206C /* default-artwork@2x.png in Resources */,
 				03D9B28615D84284005C206C /* default-queue-artwork.png in Resources */,
 				03D9B28915D84284005C206C /* default-queue-artwork@2x.png in Resources */,
+				3758A842183A0166000149E0 /* make.MinGW32.bat in Resources */,
+				3758A84F183A0166000149E0 /* CHANGES in Resources */,
 				3758A7D91839B9BF000149E0 /* PreferencesWindow.xib in Resources */,
 				03D9B29015D842ED005C206C /* dotted-border.png in Resources */,
 				03D9B29315D842ED005C206C /* dotted-border@2x.png in Resources */,
@@ -2027,24 +2257,32 @@
 				0328D9E815E7FA9D00148655 /* crosshatch-bg-inactive.png in Resources */,
 				0328D9E915E7FA9D00148655 /* crosshatch-bg-inactive@2x.png in Resources */,
 				0328D9EE15E7FAF100148655 /* editing-cancel.png in Resources */,
+				3758A84D183A0166000149E0 /* run_server.sh in Resources */,
 				0328D9EF15E7FAF100148655 /* editing-cancel@2x.png in Resources */,
+				3758A850183A0166000149E0 /* CMakeLists.txt in Resources */,
+				3758A83A183A0166000149E0 /* modules.xml in Resources */,
 				0328D9F015E7FAF100148655 /* editing-done.png in Resources */,
 				0328D9F115E7FAF100148655 /* editing-done@2x.png in Resources */,
+				3758A83F183A0166000149E0 /* CMakeLists.txt in Resources */,
 				0328D9F815E7FBAB00148655 /* sort-artist-Template.png in Resources */,
 				0328D9F915E7FBAB00148655 /* sort-artist-Template@2x.png in Resources */,
 				3758A7C118361C98000149E0 /* Logo.icns in Resources */,
 				0328D9FA15E7FBAB00148655 /* sort-new-Template.png in Resources */,
 				0328D9FB15E7FBAB00148655 /* sort-new-Template@2x.png in Resources */,
+				3758A836183A0166000149E0 /* .name in Resources */,
 				0328D9FC15E7FBAB00148655 /* sort-popular-Template.png in Resources */,
 				0328D9FD15E7FBAB00148655 /* sort-popular-Template@2x.png in Resources */,
 				036F859B15EEF09300DF72B9 /* share-button.png in Resources */,
 				036F859C15EEF09300DF72B9 /* share-button@2x.png in Resources */,
 				036F85A715EEF2F600DF72B9 /* slider-knob-h.png in Resources */,
 				036F85A815EEF2F600DF72B9 /* slider-knob-h@2x.png in Resources */,
+				3758A84A183A0166000149E0 /* README in Resources */,
 				036F85A915EEF2F600DF72B9 /* slider-knob.png in Resources */,
+				3758A83C183A0166000149E0 /* scope_settings.xml in Resources */,
 				036F85AA15EEF2F600DF72B9 /* slider-knob@2x.png in Resources */,
 				036F85B915EEFDAB00DF72B9 /* slider-empty-bottom.png in Resources */,
 				036F85BA15EEFDAB00DF72B9 /* slider-empty-bottom@2x.png in Resources */,
+				3758A864183A0166000149E0 /* TODO in Resources */,
 				036F85BB15EEFDAB00DF72B9 /* slider-empty-mid.png in Resources */,
 				036F85BC15EEFDAB00DF72B9 /* slider-empty-mid@2x.png in Resources */,
 				036F85BD15EEFDAB00DF72B9 /* slider-empty-top.png in Resources */,
@@ -2052,11 +2290,13 @@
 				036F85BE15EEFDAB00DF72B9 /* slider-empty-top@2x.png in Resources */,
 				036F85BF15EEFDAB00DF72B9 /* slider-filled-bottom.png in Resources */,
 				036F85C015EEFDAB00DF72B9 /* slider-filled-bottom@2x.png in Resources */,
+				3758A84E183A0166000149E0 /* TODO in Resources */,
 				036F85C115EEFDAB00DF72B9 /* slider-filled-mid.png in Resources */,
 				036F85C215EEFDAB00DF72B9 /* slider-filled-mid@2x.png in Resources */,
 				036F85C315EEFDAB00DF72B9 /* slider-filled-top.png in Resources */,
 				036F85C415EEFDAB00DF72B9 /* slider-filled-top@2x.png in Resources */,
 				036F85CE15EF0BF800DF72B9 /* repeat-all.png in Resources */,
+				3758A849183A0166000149E0 /* OscGroupServerStartStop.sh in Resources */,
 				036F85CF15EF0BF800DF72B9 /* repeat-one.png in Resources */,
 				036F85D815EF1C0C00DF72B9 /* search-box@2x.png in Resources */,
 				036F85D915EF1C0C00DF72B9 /* search-box.png in Resources */,
@@ -2069,6 +2309,7 @@
 				036F85E715EF205D00DF72B9 /* meta-left@2x.png in Resources */,
 				036F85EC15EF20B700DF72B9 /* queue-return-left.png in Resources */,
 				036F85ED15EF20B700DF72B9 /* queue-return-left@2x.png in Resources */,
+				3758A841183A0166000149E0 /* LICENSE in Resources */,
 				036F85EE15EF20B700DF72B9 /* queue-return-right.png in Resources */,
 				036F85EF15EF20B700DF72B9 /* queue-return-right@2x.png in Resources */,
 				03F47EF315F3F4C6008FD1BE /* nav-Template@2x.png in Resources */,
@@ -2138,6 +2379,8 @@
 				03BB83B813C3751F0035BA6B /* SNRAudioMetadata.mm in Sources */,
 				0313A3DD13C3F69800FF95F6 /* SNRArtwork.m in Sources */,
 				0313A3E113C3F69800FF95F6 /* SNRArtist.m in Sources */,
+				3758A85C183A0166000149E0 /* OscOutboundPacketStream.cpp in Sources */,
+				3758A85E183A0166000149E0 /* OscReceivedElements.cpp in Sources */,
 				0313A3E713C3F69900FF95F6 /* SNRPlayCount.m in Sources */,
 				0313A3EA13C3F69900FF95F6 /* SNRAlbum.m in Sources */,
 				0313A3ED13C3F69900FF95F6 /* SNRTag.m in Sources */,
@@ -2166,6 +2409,7 @@
 				3758A7C41836243F000149E0 /* MainWindowController.m in Sources */,
 				036581AF140B09D20075FA61 /* NSAlert-SNRAdditions.m in Sources */,
 				03660156140C5163004951C3 /* NSManagedObjectContext-SNRAdditions.m in Sources */,
+				3758A843183A0166000149E0 /* Makefile in Sources */,
 				03660159140C5928004951C3 /* SNRSearchIndex-SNRAdditions.m in Sources */,
 				0382CEE7140C91EC00DC69CF /* NSFileManager-SNRAdditions.m in Sources */,
 				0353543D1419D42E00126F9B /* NSView-SNRAdditions.m in Sources */,
@@ -2173,6 +2417,7 @@
 				036C32F7141F04A500541661 /* SNRPreferencesWindowController.m in Sources */,
 				036C32FA141F05BD00541661 /* NSUserDefaults-SNRAdditions.m in Sources */,
 				036C32FD141F0C2E00541661 /* SNRURLHandler.m in Sources */,
+				3758A855183A0166000149E0 /* NetworkingUtils.cpp in Sources */,
 				038C9502141F162F00C9B1D0 /* SNRLastFMEngine-SNRAdditions.m in Sources */,
 				037A940D145F733E005DFEDF /* NSWindow+SNRAdditions.m in Sources */,
 				03B66B4F14637EFC0079A8DD /* SNRSearchWindowController.m in Sources */,
@@ -2182,6 +2427,7 @@
 				03332338147617BC00926786 /* NSData+Base64.m in Sources */,
 				03A9061C14774DFD00335F57 /* SNRFileImportOperation.m in Sources */,
 				03A9061F14777A2E00335F57 /* SNRiTunesImportOperation.m in Sources */,
+				3758A840183A0166000149E0 /* GroupServer.cpp in Sources */,
 				03AD5EF3147B74FF00E23455 /* SNRSharedImageCache.m in Sources */,
 				0322C2461481DD980080FC36 /* NSButton+SNRAdditions.m in Sources */,
 				0312080D149D8E1A0098EB35 /* SNRMixArtwork.m in Sources */,
@@ -2245,15 +2491,20 @@
 				03AFC34C151E5D6A008F6F94 /* SNRQueueTextLayer.m in Sources */,
 				033A29A9151EBD79000E3218 /* SNRQueuePlayLayer.m in Sources */,
 				033A29EC152009FC000E3218 /* SNRQueueProgressLayer.m in Sources */,
+				3758A85B183A0166000149E0 /* Makefile in Sources */,
 				033A2A0A15215F25000E3218 /* SNRQueueReturnLayer.m in Sources */,
+				3758A847183A0166000149E0 /* OscGroupClient.cpp in Sources */,
+				3758A856183A0166000149E0 /* UdpSocket.cpp in Sources */,
 				037781B71527E5DB00FEB408 /* SNRQueueSidebar.m in Sources */,
 				03BCFAC11530FF5C00997F67 /* SNRSearchController.m in Sources */,
+				3758A85D183A0166000149E0 /* OscPrintReceivedElements.cpp in Sources */,
 				03AB8CAA15350F4000F9250E /* SNRSearchViewController.m in Sources */,
 				03AB8CB215390FA300F9250E /* SNRSearchPopoverController.m in Sources */,
 				03878AC3153A3A22008D53C3 /* SNRQueueScroller.m in Sources */,
 				03ECBAAB1540F2DB00BA7731 /* SNRPreferencesBackground.m in Sources */,
 				03ECBAB015433B4A00BA7731 /* SNRHotKeyManager.m in Sources */,
 				032CDC1D154D00AA00CBF7CB /* SNRSmallProgressBar.m in Sources */,
+				3758A848183A0166000149E0 /* OscGroupServer.cpp in Sources */,
 				03AB7A66154DFEF8006BCD14 /* SNRImportManager.m in Sources */,
 				03B19E8A15535A3400C3B8D1 /* SNRSaveMixWindowController.m in Sources */,
 				03B19E9715535BAC00C3B8D1 /* SNRArtworkImageView.m in Sources */,
@@ -2268,6 +2519,7 @@
 				032A1D1115DEBD8C00256B5E /* SNRArtistsArrayControllerNode.m in Sources */,
 				032A1D1615DEBE7400256B5E /* SNRArtistsStaticGroupNode.m in Sources */,
 				032A1D1B15DEBE8200256B5E /* SNRArtistsStaticNode.m in Sources */,
+				3758A844183A0166000149E0 /* md5.cpp in Sources */,
 				032A1D5115DED14100256B5E /* NSOutlineView+SNRAdditions.m in Sources */,
 				032A1D5615DEE64D00256B5E /* SNROutlineView.m in Sources */,
 				032A1D5B15DEE83E00256B5E /* SNRArtistsOutlineView.m in Sources */,
@@ -2287,6 +2539,8 @@
 				0392ED9515E1D0330096B723 /* SNRAlbumEditLayer.m in Sources */,
 				0392ED9A15E1D1FD0096B723 /* SNRAlbumButtonLayer.m in Sources */,
 				0314B0B715E29E510074B929 /* SNRAlbumEmptyView.m in Sources */,
+				3758A85F183A0166000149E0 /* OscTypes.cpp in Sources */,
+				3758A854183A0166000149E0 /* IpEndpointName.cpp in Sources */,
 				031324F516058A9F00CE34AC /* SNRConstants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2593,7 +2847,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		036417B51388CC92003F2A21 /* Build configuration list for PBXNativeTarget "Artsmesh" */ = {
+		036417B51388CC92003F2A21 /* Build configuration list for PBXNativeTarget "Artsmesh2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				036417B61388CC92003F2A21 /* Debug */,

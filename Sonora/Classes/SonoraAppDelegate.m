@@ -772,9 +772,5 @@ static NSString* const kiTunesAppPath = @"/Applications/iTunes.app";
     [[SNR_QueueCoordinator activeQueueController] shuffle];
     return nil;
 }
--(IBAction) launchOSCGroupClientApplication:(id)sender
-{
-	[OSCGroupTaskHelper launchOSCGroupClientApplication];
-}
 
 @end
