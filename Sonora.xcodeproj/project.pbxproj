@@ -335,6 +335,7 @@
 		3758A85F183A0166000149E0 /* OscTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3758A82B183A0166000149E0 /* OscTypes.cpp */; };
 		3758A860183A0166000149E0 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 3758A82D183A0166000149E0 /* README */; };
 		3758A864183A0166000149E0 /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = 3758A835183A0166000149E0 /* TODO */; };
+		3758A86A183A0DD7000149E0 /* OSCGroupClientGUI.app in Resources */ = {isa = PBXBuildFile; fileRef = 3758A865183A0660000149E0 /* OSCGroupClientGUI.app */; };
 		86F6993C5FE244739816BDB3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10314D7A429A4257993EE387 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -881,8 +882,8 @@
 		3758A7D51839B99C000149E0 /* PreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesWindowController.m; sourceTree = "<group>"; };
 		3758A7D81839B9BF000149E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PreferencesWindow.xib; sourceTree = "<group>"; };
 		3758A7DB1839BA63000149E0 /* ArtsmeshConstDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtsmeshConstDefinition.h; sourceTree = "<group>"; };
-		3758A7DC1839BAA2000149E0 /* IPHostDataSourceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IPHostDataSourceController.h; path = Sonora/Controller/IPHostDataSourceController.h; sourceTree = "<group>"; };
-		3758A7DD1839BAA2000149E0 /* IPHostDataSourceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IPHostDataSourceController.m; path = Sonora/Controller/IPHostDataSourceController.m; sourceTree = "<group>"; };
+		3758A7DC1839BAA2000149E0 /* IPHostDataSourceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IPHostDataSourceController.h; path = ../Controller/IPHostDataSourceController.h; sourceTree = "<group>"; };
+		3758A7DD1839BAA2000149E0 /* IPHostDataSourceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IPHostDataSourceController.m; path = ../Controller/IPHostDataSourceController.m; sourceTree = "<group>"; };
 		3758A7DF1839BB05000149E0 /* PreferencesDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesDataSource.h; sourceTree = "<group>"; };
 		3758A7E01839BB05000149E0 /* PreferencesDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesDataSource.m; sourceTree = "<group>"; };
 		3758A7E11839BB05000149E0 /* PreferencesHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesHelper.h; sourceTree = "<group>"; };
@@ -945,6 +946,7 @@
 		3758A82C183A0166000149E0 /* OscTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscTypes.h; sourceTree = "<group>"; };
 		3758A82D183A0166000149E0 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		3758A835183A0166000149E0 /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
+		3758A865183A0660000149E0 /* OSCGroupClientGUI.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; name = OSCGroupClientGUI.app; path = Sonora/OSCGroupClientGUI.app; sourceTree = "<group>"; };
 		4695956A88A843CEA204DF02 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -1062,6 +1064,7 @@
 		0325A31313C2A48D003DE2AE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3758A865183A0660000149E0 /* OSCGroupClientGUI.app */,
 				03D9B27B15D8422E005C206C /* Images */,
 				031324F11605897300CE34AC /* dsa_pub.pem */,
 				03A3BF8414D5EB140060C73F /* Sonora.sdef */,
@@ -1349,8 +1352,6 @@
 			children = (
 				3758A7E8183A0166000149E0 /* oscgroups */,
 				3758A809183A0166000149E0 /* oscpack */,
-				3758A7DC1839BAA2000149E0 /* IPHostDataSourceController.h */,
-				3758A7DD1839BAA2000149E0 /* IPHostDataSourceController.m */,
 				3758A7DA1839BA63000149E0 /* Shared */,
 				3758A7D31839B99C000149E0 /* Controller */,
 				3758A7C51836248B000149E0 /* MainViewController.h */,
@@ -1910,6 +1911,8 @@
 		3758A7DA1839BA63000149E0 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				3758A7DD1839BAA2000149E0 /* IPHostDataSourceController.m */,
+				3758A7DC1839BAA2000149E0 /* IPHostDataSourceController.h */,
 				3758A7DF1839BB05000149E0 /* PreferencesDataSource.h */,
 				3758A7E01839BB05000149E0 /* PreferencesDataSource.m */,
 				3758A7E11839BB05000149E0 /* PreferencesHelper.h */,
@@ -2196,6 +2199,7 @@
 				036417A31388CC92003F2A21 /* InfoPlist.strings in Resources */,
 				3758A7BF18361C11000149E0 /* Images.xcassets in Resources */,
 				036417A91388CC92003F2A21 /* Credits.rtf in Resources */,
+				3758A86A183A0DD7000149E0 /* OSCGroupClientGUI.app in Resources */,
 				036417AF1388CC92003F2A21 /* MainMenu.xib in Resources */,
 				039F369613C7A7FA00790613 /* Localizable.strings in Resources */,
 				03DE521113EB8D810099BE69 /* SNRSongsViewController.xib in Resources */,

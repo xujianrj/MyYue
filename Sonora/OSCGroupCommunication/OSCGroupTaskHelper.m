@@ -14,9 +14,12 @@
 +(NSString*) OSCGroupClientGUIApplicationLaunchPath
 {
 	// "./OSCGroupClientGUI.app/Contents/MacOS/OSCGroupClientGUI";
-	NSString * path=[NSString stringWithFormat:@"%@/Contents/MacOS/%@",
-					 [[[NSBundle mainBundle] bundlePath] stringByReplacingOccurrencesOfString:@"/Sonora.app" withString:[NSString stringWithFormat:@"/%@.app",kOSCGroupClientApplicationName]],
-					 kOSCGroupClientApplicationName];
+//	NSString * path=[NSString stringWithFormat:@"%@/Contents/MacOS/%@",
+//					 [[[NSBundle mainBundle] bundlePath] stringByReplacingOccurrencesOfString:@"/Artsmesh2.app" withString:[NSString stringWithFormat:@"/%@.app",kOSCGroupClientApplicationName]],
+//					 kOSCGroupClientApplicationName];
+    
+    NSString *path=[NSString stringWithFormat:@"/Applications/Artsmesh Suite/%@.app/Contents/MacOS/%@",
+kOSCGroupClientApplicationName,kOSCGroupClientApplicationName];
     
     NSLog(@"Path: %@",path);
 	
