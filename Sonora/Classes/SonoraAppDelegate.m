@@ -49,6 +49,7 @@
 
 #import "SNRArtwork.h"
 #import "OSCGroupTaskHelper.h"
+#import "PreferencesWindowController.h"
 
 static NSString* const kPersistentStoreFilename = @"library";
 static NSString* const kSearchIndexFilename = @"searchindex";
@@ -278,7 +279,9 @@ static NSString* const kiTunesAppPath = @"/Applications/iTunes.app";
 
 - (IBAction)preferences:(id)sender
 {
-    [[SNRPreferencesWindowController sharedPrefsWindowController] showWindow:nil];
+    [[PreferencesWindowController sharedInstance] showWindow:[PreferencesWindowController sharedInstance]];
+
+//    [[SNRPreferencesWindowController sharedPrefsWindowController] showWindow:nil];
 }
 
 - (IBAction)feedback:(id)sender
@@ -631,6 +634,9 @@ static NSString* const kiTunesAppPath = @"/Applications/iTunes.app";
     }
     return nil;
 }
+
+-(void) applyPreferencesChanges{
+}
 @end
 
 @implementation NSImage (ImageScriptAdditions)
@@ -770,4 +776,5 @@ static NSString* const kiTunesAppPath = @"/Applications/iTunes.app";
 {
 	[OSCGroupTaskHelper launchOSCGroupClientApplication];
 }
+
 @end

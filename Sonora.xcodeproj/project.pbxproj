@@ -290,6 +290,12 @@
 		3758A7C118361C98000149E0 /* Logo.icns in Resources */ = {isa = PBXBuildFile; fileRef = 3758A7C018361C98000149E0 /* Logo.icns */; };
 		3758A7C41836243F000149E0 /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3758A7C31836243F000149E0 /* MainWindowController.m */; };
 		3758A7C71836248C000149E0 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3758A7C61836248C000149E0 /* MainViewController.m */; };
+		3758A7D61839B99C000149E0 /* PreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3758A7D51839B99C000149E0 /* PreferencesWindowController.m */; };
+		3758A7D91839B9BF000149E0 /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3758A7D71839B9BF000149E0 /* PreferencesWindow.xib */; };
+		3758A7DE1839BAA2000149E0 /* IPHostDataSourceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3758A7DD1839BAA2000149E0 /* IPHostDataSourceController.m */; };
+		3758A7E51839BB05000149E0 /* PreferencesDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3758A7E01839BB05000149E0 /* PreferencesDataSource.m */; };
+		3758A7E61839BB05000149E0 /* PreferencesHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3758A7E21839BB05000149E0 /* PreferencesHelper.m */; };
+		3758A7E71839BB05000149E0 /* ProcessInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3758A7E41839BB05000149E0 /* ProcessInfo.m */; };
 		86F6993C5FE244739816BDB3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10314D7A429A4257993EE387 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -524,7 +530,7 @@
 		035A322713BEB941009CC0C0 /* ApplicationServices.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
 		035A322913BEB94E009CC0C0 /* QuartzCore.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		035AD56014BFF4AA007D5E83 /* AudioUnit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
-		036417941388CC92003F2A21 /* Sonora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sonora.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		036417941388CC92003F2A21 /* Sonora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Sonora.app; path = Artsmesh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0364179C1388CC92003F2A21 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		0364179D1388CC92003F2A21 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		036417A01388CC92003F2A21 /* Sonora-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sonora-Info.plist"; sourceTree = "<group>"; };
@@ -832,6 +838,18 @@
 		3758A7C31836243F000149E0 /* MainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindowController.m; sourceTree = "<group>"; };
 		3758A7C51836248B000149E0 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		3758A7C61836248C000149E0 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		3758A7D41839B99C000149E0 /* PreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesWindowController.h; sourceTree = "<group>"; };
+		3758A7D51839B99C000149E0 /* PreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesWindowController.m; sourceTree = "<group>"; };
+		3758A7D81839B9BF000149E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PreferencesWindow.xib; sourceTree = "<group>"; };
+		3758A7DB1839BA63000149E0 /* ArtsmeshConstDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtsmeshConstDefinition.h; sourceTree = "<group>"; };
+		3758A7DC1839BAA2000149E0 /* IPHostDataSourceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IPHostDataSourceController.h; path = Sonora/Controller/IPHostDataSourceController.h; sourceTree = "<group>"; };
+		3758A7DD1839BAA2000149E0 /* IPHostDataSourceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IPHostDataSourceController.m; path = Sonora/Controller/IPHostDataSourceController.m; sourceTree = "<group>"; };
+		3758A7DF1839BB05000149E0 /* PreferencesDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesDataSource.h; sourceTree = "<group>"; };
+		3758A7E01839BB05000149E0 /* PreferencesDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesDataSource.m; sourceTree = "<group>"; };
+		3758A7E11839BB05000149E0 /* PreferencesHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesHelper.h; sourceTree = "<group>"; };
+		3758A7E21839BB05000149E0 /* PreferencesHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesHelper.m; sourceTree = "<group>"; };
+		3758A7E31839BB05000149E0 /* ProcessInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProcessInfo.h; sourceTree = "<group>"; };
+		3758A7E41839BB05000149E0 /* ProcessInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProcessInfo.m; sourceTree = "<group>"; };
 		4695956A88A843CEA204DF02 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -960,6 +978,7 @@
 		0325A32B13C2A84F003DE2AE /* Interface Builder */ = {
 			isa = PBXGroup;
 			children = (
+				3758A7D71839B9BF000149E0 /* PreferencesWindow.xib */,
 				036417AD1388CC92003F2A21 /* MainMenu.xib */,
 				03B66B50146396CD0079A8DD /* SNRSearchWindowController.xib */,
 				03DE520F13EB8D810099BE69 /* SNRSongsViewController.xib */,
@@ -1233,6 +1252,10 @@
 		036417891388CC90003F2A21 = {
 			isa = PBXGroup;
 			children = (
+				3758A7DC1839BAA2000149E0 /* IPHostDataSourceController.h */,
+				3758A7DD1839BAA2000149E0 /* IPHostDataSourceController.m */,
+				3758A7DA1839BA63000149E0 /* Shared */,
+				3758A7D31839B99C000149E0 /* Controller */,
 				3758A7C51836248B000149E0 /* MainViewController.h */,
 				3758A7C61836248C000149E0 /* MainViewController.m */,
 				3758A7C21836243F000149E0 /* MainWindowController.h */,
@@ -1777,6 +1800,31 @@
 			path = Sonora/OSCGroupCommunication;
 			sourceTree = "<group>";
 		};
+		3758A7D31839B99C000149E0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3758A7D41839B99C000149E0 /* PreferencesWindowController.h */,
+				3758A7D51839B99C000149E0 /* PreferencesWindowController.m */,
+			);
+			name = Controller;
+			path = Sonora/Controller;
+			sourceTree = "<group>";
+		};
+		3758A7DA1839BA63000149E0 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				3758A7DF1839BB05000149E0 /* PreferencesDataSource.h */,
+				3758A7E01839BB05000149E0 /* PreferencesDataSource.m */,
+				3758A7E11839BB05000149E0 /* PreferencesHelper.h */,
+				3758A7E21839BB05000149E0 /* PreferencesHelper.m */,
+				3758A7E31839BB05000149E0 /* ProcessInfo.h */,
+				3758A7E41839BB05000149E0 /* ProcessInfo.m */,
+				3758A7DB1839BA63000149E0 /* ArtsmeshConstDefinition.h */,
+			);
+			name = Shared;
+			path = Sonora/Shared;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1969,6 +2017,7 @@
 				03D9B28315D84284005C206C /* default-artwork@2x.png in Resources */,
 				03D9B28615D84284005C206C /* default-queue-artwork.png in Resources */,
 				03D9B28915D84284005C206C /* default-queue-artwork@2x.png in Resources */,
+				3758A7D91839B9BF000149E0 /* PreferencesWindow.xib in Resources */,
 				03D9B29015D842ED005C206C /* dotted-border.png in Resources */,
 				03D9B29315D842ED005C206C /* dotted-border@2x.png in Resources */,
 				03D9B29615D842ED005C206C /* edit-mix.png in Resources */,
@@ -2097,6 +2146,7 @@
 				0353030713CAA80B00D87EB4 /* NSArray-SNRAdditions.m in Sources */,
 				03A8B7D413CE0F50008138F6 /* SNRThumbnailArtwork.m in Sources */,
 				03DCB9D613D0F9D300A3F614 /* SNRInsetTextFieldCell.m in Sources */,
+				3758A7D61839B99C000149E0 /* PreferencesWindowController.m in Sources */,
 				03DD2D6513D513E000EC1FF1 /* SNRAudioPlayer.mm in Sources */,
 				037E641813DA7DE100ADF2BC /* SNRSearchIndex.m in Sources */,
 				03F2CE6E13E9F16E008C291F /* SNRArtistsViewController.m in Sources */,
@@ -2156,6 +2206,8 @@
 				039BDC3B14E75F9800F63521 /* SNRHUDTooltipWindow.m in Sources */,
 				039BDC3E14E7705F00F63521 /* NSObject+SNRAdditions.m in Sources */,
 				03F2B9A214E85CA400792CF4 /* SNRProgressWindowController.m in Sources */,
+				3758A7DE1839BAA2000149E0 /* IPHostDataSourceController.m in Sources */,
+				3758A7E51839BB05000149E0 /* PreferencesDataSource.m in Sources */,
 				03071D1414EE153E009478D8 /* NSDate+SNRAdditions.m in Sources */,
 				03A42941150A96AB002A5936 /* SNRAlbumGridViewCell.m in Sources */,
 				03A42944150A96AB002A5936 /* SNRAlbumsGridView.m in Sources */,
@@ -2171,6 +2223,7 @@
 				03A7CC36151181B900618CAF /* _SNRAlbum.m in Sources */,
 				03A7CC39151181B900618CAF /* _SNRArtist.m in Sources */,
 				03A7CC3C151181B900618CAF /* _SNRArtwork.m in Sources */,
+				3758A7E61839BB05000149E0 /* PreferencesHelper.m in Sources */,
 				03A7CC3F151181B900618CAF /* _SNRMix.m in Sources */,
 				03A7CC42151181BA00618CAF /* _SNRMixArtwork.m in Sources */,
 				03A7CC45151181BA00618CAF /* _SNRMixThumbnailArtwork.m in Sources */,
@@ -2210,6 +2263,7 @@
 				03D0746015672BD3007B30CA /* SNRVolumeViewController.m in Sources */,
 				03B88B1D156F49880030064F /* SNRQueueEmptyView.m in Sources */,
 				03ADDBEE15DCB72D002996FF /* SNRArrayController.m in Sources */,
+				3758A7E71839BB05000149E0 /* ProcessInfo.m in Sources */,
 				032A1D0B15DEBCAB00256B5E /* SNRArtistsNode.m in Sources */,
 				032A1D1115DEBD8C00256B5E /* SNRArtistsArrayControllerNode.m in Sources */,
 				032A1D1615DEBE7400256B5E /* SNRArtistsStaticGroupNode.m in Sources */,
@@ -2352,6 +2406,14 @@
 				03F2B9A414E863F500792CF4 /* en */,
 			);
 			name = SNRProgressWindowController.xib;
+			sourceTree = "<group>";
+		};
+		3758A7D71839B9BF000149E0 /* PreferencesWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3758A7D81839B9BF000149E0 /* en */,
+			);
+			name = PreferencesWindow.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

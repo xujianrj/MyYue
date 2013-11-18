@@ -170,11 +170,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Sonora/Classes/SonoraAppDelegate.m"
-            timestampString = "406188738.673503"
+            timestampString = "406437046.525027"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "771"
-            endingLineNumber = "771"
+            startingLineNumber = "777"
+            endingLineNumber = "777"
             landmarkName = "-launchOSCGroupClientApplication:"
             landmarkType = "5">
          </BreakpointContent>

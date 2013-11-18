@@ -80,4 +80,5 @@
 - (IBAction)share:(id)sender;
 
 -(IBAction) launchOSCGroupClientApplication:(id)sender;
+-(void) applyPreferencesChanges;
 @end
